@@ -1,0 +1,54 @@
+.nav-main
+  height: 45px
+  padding: 10px 20px
+  position: relative
+  background: #333
+
+  a, label
+    color: white
+
+  .home
+    float: left
+
+  input.menu-toggle
+    visibility: hidden
+    position: absolute
+    left: -100%
+
+  label
+    float: right
+    cursor: pointer
+
+  ul
+    display: none
+
+    > li
+      width: 8.33%
+      float: left
+
+      a
+        padding: 10px
+        display: block
+
+      span
+        display: block
+
+      span:first-of-type
+        font-size: 24px
+        font-weight: bold
+
+      span:nth-of-type(2)
+        font-size: 15px
+
+  .menu-toggle:checked ~ ul > li:not(:last-child)
+    border-right: 1px solid white(.3)
+
+  .menu-toggle:checked ~ ul
+    width: 100%
+    display: block
+    position: absolute
+    top: 45px
+    left: 0
+    background-image: linear-gradient(to right, steelblue, mediumvioletred)
+    border-bottom: 1px solid white(.3)
+    box-shadow: 0 3px 3px black(.2)

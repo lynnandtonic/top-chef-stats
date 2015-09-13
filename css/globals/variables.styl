@@ -1,0 +1,42 @@
+// Variables
+
+// Font Families
+$font-family-helvetica = Helvetica, Arial, sans-serif
+$font-family-georgia = Georgia, Times, serif
+
+// Font Weights
+$font-weight-normal = 400
+$font-weight-medium = 700
+$font-weight-bold = 900
+
+// Colors
+
+white(alpha)
+  rgba(255,255,255,alpha)
+
+black(alpha)
+  rgba(0,0,0,alpha)
+
+// Transforms
+
+centerContent =
+  position: absolute
+  top: 50%
+  left: 50%
+  -webkit-transform: translate(-50%,-50%)
+  -moz-transform: translate(-50%,-50%)
+  transform: translate(-50%,-50%)
+
+centerHoriz =
+  position: absolute
+  left: 50%
+  -webkit-transform: translateX(-50%)
+  -moz-transform: translateX(-50%)
+  transform: translateX(-50%)
+
+centerVert =
+  position: absolute
+  top: 50%
+  -webkit-transform: translateY(-50%)
+  -moz-transform: translateY(-50%)
+  transform: translateY(-50%)

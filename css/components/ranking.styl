@@ -1,0 +1,113 @@
+.ranking
+  list-style: none
+
+  li
+    width: 16.666%
+    margin-bottom: 20px
+    float: left
+    position: relative
+    text-align: center
+
+    .chef
+      width: 175px
+      height: 175px
+      margin: 0 auto 10px
+      background: no-repeat
+
+    &:nth-child(1) .chef
+      background-position: 0 0
+    &:nth-child(2) .chef
+      background-position: -175px 0
+    &:nth-child(3) .chef
+      background-position: -350px 0
+    &:nth-child(4) .chef
+      background-position: 0 -175px
+    &:nth-child(5) .chef
+      background-position: -175px -175px
+    &:nth-child(6) .chef
+      background-position: -350px -175px
+    &:nth-child(7) .chef
+      background-position: 0 -350px
+    &:nth-child(8) .chef
+      background-position: -175px -350px
+    &:nth-child(9) .chef
+      background-position: -350px -350px
+    &:nth-child(10) .chef
+      background-position: 0 -525px
+    &:nth-child(11) .chef
+      background-position: -175px -525px
+    &:nth-child(12) .chef
+      background-position: -350px -525px
+    &:nth-child(13) .chef
+      background-position: 0 -700px
+    &:nth-child(14) .chef
+      background-position: -175px -700px
+    &:nth-child(15) .chef
+      background-position: -350px -700px
+
+    span
+      margin-top: 30px
+      padding: 8px 10px 4px
+      position: relative
+      display: inline-block
+      font-weight: bold
+      font-size: 16px
+
+      &:before
+        width: 80px
+        content: ''
+        display: inline-block
+        top: -25px
+        {centerHoriz}
+        font-size: 14px
+        line-height: 0
+        border-top: 10px solid black(.3)
+        border-bottom: 10px solid black(.3)
+        border-left: 5px solid transparent
+        border-right: 5px solid transparent
+
+      &:after
+        content: ''
+        {centerHoriz}
+        top: -24px
+        font-size: 14px
+
+    &:first-child
+      span:before
+        border-top-color: gold
+        border-bottom-color: gold
+      span:after
+        top: -24px
+        content: 'Winner'
+        color: brown
+
+    &:nth-child(2) span:after
+        content: '2nd'
+    &:nth-child(3) span:after
+        content: '3rd'
+    &:nth-child(4) span:after
+        content: '4th'
+    &:nth-child(5) span:after
+        content: '5th'
+    &:nth-child(6) span:after
+        content: '6th'
+    &:nth-child(7) span:after
+        content: '7th'
+    &:nth-child(8) span:after
+        content: '8th'
+    &:nth-child(9) span:after
+        content: '9th'
+    &:nth-child(10) span:after
+        content: '10th'
+    &:nth-child(11) span:after
+        content: '11th'
+    &:nth-child(12) span:after
+        content: '12th'
+    &:nth-child(13) span:after
+        content: '13th'
+    &:nth-child(14) span:after
+        content: '14th'
+    &:nth-child(15) span:after
+        content: '15th'
+    &:nth-child(16) span:after
+        content: '16th'
