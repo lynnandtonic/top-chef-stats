@@ -229,6 +229,9 @@ h1 span:last-of-type {
   border-bottom: 1px solid rgba(255,255,255,0.3);
   box-shadow: 0 3px 3px rgba(0,0,0,0.2);
 }
+.season {
+  padding: 50px 20px;
+}
 .ranking {
   list-style: none;
 }
@@ -289,6 +292,21 @@ h1 span:last-of-type {
 }
 .ranking li:nth-child(15) .chef {
   background-position: -350px -700px;
+}
+.ranking li:nth-child(16) .chef {
+  background-position: 0 -875px;
+}
+.ranking li:nth-child(17) .chef {
+  background-position: -175px -875px;
+}
+.ranking li:nth-child(18) .chef {
+  background-position: -350px -875px;
+}
+.ranking li:nth-child(19) .chef {
+  background-position: 0 -1050px;
+}
+.ranking li:nth-child(20) .chef {
+  background-position: -175px -1050px;
 }
 .ranking li span {
   margin-top: 30px;
@@ -379,8 +397,19 @@ h1 span:last-of-type {
 .ranking li:nth-child(16) span:after {
   content: '16th';
 }
+.ranking li:nth-child(17) span:after {
+  content: '17th';
+}
+.ranking li:nth-child(18) span:after {
+  content: '18th';
+}
+.ranking li:nth-child(19) span:after {
+  content: '19th';
+}
+.ranking li:nth-child(20) span:after {
+  content: '20th';
+}
 .season-01 {
-  padding: 50px 20px;
   background: #c71585;
 }
 .season-01 .ranking li .chef {
@@ -388,10 +417,79 @@ h1 span:last-of-type {
   background-size: 525px 700px;
 }
 .season-02 {
-  padding: 50px 20px;
   background: #4682b4;
 }
 .season-02 .ranking li .chef {
   background-image: url("/images/season-02.png");
   background-size: 525px 875px;
+}
+.season-03 {
+  background: #40e0d0;
+}
+.season-03 .ranking li .chef {
+  background-image: url("/images/season-03.png");
+  background-size: 525px 875px;
+}
+.season-04 {
+  background: #800080;
+}
+.season-04 .ranking li .chef {
+  background-image: url("/images/season-04.png");
+  background-size: 525px 1051px;
+}
+.season-05 {
+  background: #ee82ee;
+}
+.season-05 .ranking li .chef {
+  background-image: url("/images/season-05.png");
+  background-size: 525px 1051px;
+}
+.season-06 {
+  background: #4682b4;
+}
+.season-06 .ranking li .chef {
+  background-image: url("/images/season-06.png");
+  background-size: 525px 1050px;
+}
+.season-07 {
+  background: #4682b4;
+}
+.season-07 .ranking li .chef {
+  background-image: url("/images/season-07.png");
+  background-size: 525px 1050px;
+}
+.season-08 {
+  background: #008080;
+}
+.season-08 .ranking li .chef {
+  background-image: url("/images/season-08.png");
+  background-size: 525px 1050px;
+}
+.season-09 {
+  background: #40e0d0;
+}
+.season-09 .ranking li .chef {
+  background-image: url("/images/season-09.png");
+  background-size: 525px 1050px;
+}
+.season-10 {
+  background: #800000;
+}
+.season-10 .ranking li .chef {
+  background-image: url("/images/season-10.png");
+  background-size: 525px 1050px;
+}
+.season-11 {
+  background: #008080;
+}
+.season-11 .ranking li .chef {
+  background-image: url("/images/season-11.png");
+  background-size: 525px 1225px;
+}
+.season-12 {
+  background: #008000;
+}
+.season-12 .ranking li .chef {
+  background-image: url("/images/season-12.png");
+  background-size: 525px 1050px;
 }
