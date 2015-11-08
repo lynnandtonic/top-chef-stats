@@ -29,21 +29,86 @@ a
   text-decoration: none
 
 h1
-  margin: 0 20px 60px
+  margin: 0 20px 15px
+  font-size: 50px
+  font-weight: bold
   text-align: center
 
   span
     display: block
 
-    &:first-of-type
-      font-size: 50px
-      font-weight: bold
-
     &:last-of-type
       font-size: 30px
 
+h2
+  font-size: 18px
+  border-bottom: 1px solid white(.5)
+
+.intro
+  margin: 0 auto 100px
+  padding: 30px 15px
+  text-align: center
+  background: black(.1)
+
+  p
+    max-width: 500px
+    margin: 0 auto
+
+.stat
+  position: relative
+  font-size: 85px
+  font-weight: bold
+
+  &.inline
+    display: inline-block
+
+  &.inline + .inline
+    margin-left: 10px
+
+  &.woman,
+  &.man
+    background: no-repeat left center
+    background-size: auto 50px
+    padding-left: 40px
+
+  &.woman
+    background-image: url(../images/woman.svg)
+  &.man
+    background-image: url(../images/man.svg)
+
+  .name
+    margin-left: 10px
+    padding: 8px 45px 6px 10px
+    display: inline-block
+    position: absolute
+    top: 50px
+    right: 40px
+    background: black(.2)
+    border-radius: 3px
+    font-size: 16px
+    font-weight: normal
+    line-height: 1
+
+    .avatar
+      width: 90px
+      height: @width
+      display: block
+      position: absolute
+      top: -32px
+      right: -(@width/2)
+
+.featured
+  margin-bottom: 80px
+  padding: 30px 0 20px
+  background: black(.1)
+  text-align: center
+
+  h2
+    border: none
+
 // Clearfix
-.cf
+.cf,
+.grid
   &:before,
   &:after
     content: " "
