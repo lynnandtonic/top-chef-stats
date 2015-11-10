@@ -149,13 +149,24 @@ body {
   color: white;
 }
 a {
+  padding-bottom: 2px;
+  display: inline-block;
   text-decoration: none;
+  color: #0ff;
+}
+p a:hover {
+  border-bottom: 1px dotted;
 }
 h1 {
   margin: 0 20px 15px;
   font-size: 50px;
   font-weight: bold;
   text-align: center;
+}
+@media screen and (max-width: 500px) {
+  h1 {
+    font-size: 35px;
+  }
 }
 h1 span {
   display: block;
@@ -165,70 +176,29 @@ h1 span:last-of-type {
 }
 h2 {
   font-size: 18px;
-  border-bottom: 1px solid rgba(255,255,255,0.5);
 }
 .intro {
-  margin: 0 auto 100px;
+  margin: 0 auto 30px;
   padding: 30px 15px;
-  text-align: center;
   background: rgba(0,0,0,0.1);
+}
+@media screen and (min-width: 701px) {
+  .intro {
+    margin-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1001px) {
+  .intro {
+    margin-bottom: 100px;
+  }
 }
 .intro p {
   max-width: 500px;
   margin: 0 auto;
 }
-.stat {
-  position: relative;
-  font-size: 85px;
-  font-weight: bold;
-}
-.stat.inline {
-  display: inline-block;
-}
-.stat.inline + .inline {
-  margin-left: 10px;
-}
-.stat.woman,
-.stat.man {
-  background: no-repeat left center;
-  background-size: auto 50px;
-  padding-left: 40px;
-}
-.stat.woman {
-  background-image: url("../images/woman.svg");
-}
-.stat.man {
-  background-image: url("../images/man.svg");
-}
-.stat .name {
-  margin-left: 10px;
-  padding: 8px 45px 6px 10px;
-  display: inline-block;
-  position: absolute;
-  top: 50px;
-  right: 40px;
-  background: rgba(0,0,0,0.2);
-  border-radius: 3px;
-  font-size: 16px;
-  font-weight: normal;
-  line-height: 1;
-}
-.stat .name .avatar {
-  width: 90px;
-  height: 90px;
-  display: block;
-  position: absolute;
-  top: -32px;
-  right: -45px;
-}
-.featured {
-  margin-bottom: 80px;
-  padding: 30px 0 20px;
-  background: rgba(0,0,0,0.1);
-  text-align: center;
-}
-.featured h2 {
-  border: none;
+.footnote {
+  font-size: 14px;
+  color: rgba(255,255,255,0.6);
 }
 .cf:before,
 .grid:before,
@@ -243,7 +213,6 @@ h2 {
 }
 .nav-main {
   height: 45px;
-  padding: 10px 20px;
   position: relative;
   background: #333;
 }
@@ -252,6 +221,7 @@ h2 {
   color: white;
 }
 .nav-main .nav-home {
+  margin: 10px 20px;
   float: left;
 }
 .nav-main input.menu-toggle {
@@ -260,6 +230,8 @@ h2 {
   left: -100%;
 }
 .nav-main label {
+  padding: 10px 20px;
+  background: #800080;
   float: right;
   cursor: pointer;
 }
@@ -267,7 +239,6 @@ h2 {
   display: none;
 }
 .nav-main ul > li {
-  width: 8.33%;
   float: left;
 }
 .nav-main ul > li a {
@@ -294,33 +265,58 @@ h2 {
   top: 45px;
   left: 0;
   background-image: linear-gradient(to right, #4682b4, #c71585);
-  border-bottom: 1px solid rgba(255,255,255,0.3);
   box-shadow: 0 3px 3px rgba(0,0,0,0.2);
 }
-.grid {
-  margin-bottom: 60px;
+@media screen and (max-width: 500px) {
+  .nav-main ul > li {
+    width: 25%;
+    border-bottom: 1px solid rgba(255,255,255,0.3);
+  }
 }
-.grid .grid-item {
-  padding: 0 25px;
-  float: left;
+@media screen and (min-width: 501px) {
+  .nav-main ul > li {
+    width: 16.66%;
+    border-bottom: 1px solid rgba(255,255,255,0.3);
+  }
 }
-.grid .grid-item.p0 {
-  padding: 0;
+@media screen and (min-width: 951px) {
+  .nav-main ul > li {
+    width: 8.33%;
+  }
+  .nav-main .menu-toggle:checked ~ ul {
+    border-bottom: 1px solid rgba(255,255,255,0.3);
+  }
 }
-.grid-item .grid:last-child {
-  margin-bottom: 0;
+@media screen and (min-width: 701px) {
+  .grid-item {
+    margin: 0 0 30px;
+    padding: 0 15px;
+    float: left;
+  }
+  .grid-sm-1 {
+    width: 100%;
+  }
+  .grid-sm-2 {
+    width: 50%;
+  }
 }
-.grid-five .grid-item {
-  width: 20%;
-}
-.grid-four .grid-item {
-  width: 25%;
-}
-.grid-three .grid-item {
-  width: 33.33%;
-}
-.grid-two .grid-item {
-  width: 50%;
+@media screen and (min-width: 1001px) {
+  .grid-item {
+    margin: 0 0 50px;
+    padding: 0 25px;
+  }
+  .grid-lg-2 {
+    width: 50%;
+  }
+  .grid-lg-3 {
+    width: 33.33%;
+  }
+  .grid-lg-4 {
+    width: 25%;
+  }
+  .grid-lg-5 {
+    width: 20%;
+  }
 }
 .avatar {
   width: 175px;
@@ -331,6 +327,130 @@ h2 {
 }
 .season {
   padding: 20px;
+}
+.stat img {
+  width: 100%;
+  max-width: 100%;
+}
+.number {
+  position: relative;
+  font-weight: bold;
+}
+.number span {
+  display: inline-block;
+}
+.number span + span {
+  margin-left: 15px;
+}
+.name {
+  margin-left: 10px;
+  display: inline-block;
+  position: absolute;
+  background: rgba(0,0,0,0.2);
+  border-radius: 3px;
+  font-weight: normal;
+  line-height: 1;
+}
+.name .avatar {
+  display: block;
+  position: absolute;
+}
+.woman,
+.man {
+  background: no-repeat left top;
+}
+.woman {
+  background-image: url("../images/woman.svg");
+}
+.man {
+  background-image: url("../images/man.svg");
+}
+.featured {
+  background: rgba(0,0,0,0.1);
+  text-align: center;
+}
+@media screen and (min-width: 701px) {
+  .number {
+    font-size: 85px;
+  }
+  .stat h2 {
+    border-bottom: 1px solid rgba(255,255,255,0.5);
+  }
+  .stat .woman,
+  .stat .man {
+    background-position: left center;
+    background-size: auto 50px;
+    padding-left: 40px;
+  }
+  .stat .name {
+    padding: 8px 45px 6px 10px;
+    top: 50px;
+    right: 40px;
+    font-size: 16px;
+  }
+  .stat .name .avatar {
+    width: 90px;
+    height: 90px;
+    top: -32px;
+    right: -45px;
+  }
+  .featured {
+    margin: 0 0 80px;
+    padding: 30px 0 20px;
+    clear: left;
+  }
+}
+@media screen and (max-width: 700px) {
+  .stat:not(.person) {
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.5);
+  }
+  .stat:not(.person):last-child {
+    border-bottom: none;
+  }
+  .stat:not(.person) h2 {
+    padding-top: 10px;
+    float: left;
+  }
+  .stat:not(.person) .number {
+    text-align: right;
+    font-size: 30px;
+  }
+  .stat:not(.person) .woman,
+  .stat:not(.person) .man {
+    background-position: left 9px;
+    background-size: auto 23px;
+    padding-left: 23px;
+  }
+  .stat.person {
+    margin: 15px 0;
+  }
+  .stat.person h2 {
+    padding: 20px 0 5px;
+    border-bottom: 1px solid rgba(255,255,255,0.5);
+  }
+  .stat.person .number {
+    font-size: 55px;
+  }
+  .stat.person .name {
+    padding: 8px 40px 8px 10px;
+    top: 25px;
+    right: 30px;
+    font-size: 15px;
+  }
+  .stat.person .name .avatar {
+    width: 70px;
+    height: 70px;
+    top: -15px;
+    right: -35px;
+  }
+  .featured {
+    margin: 30px 0;
+    padding: 30px 0 20px;
+  }
+  .featured .number {
+    font-size: 40px;
+  }
 }
 .ranking {
   list-style: none;
@@ -510,8 +630,12 @@ h2 {
   content: '20th';
 }
 footer {
+  padding: 40px 20px;
   background: #333;
-  min-height: 300px;
+  text-align: center;
+}
+footer p {
+  margin-bottom: 20px;
 }
 .p0 {
   padding: 0;
@@ -524,11 +648,6 @@ footer {
 }
 .home {
   background: linear-gradient(170deg, #4682b4 0, #008b8b 50%, #c71585 100%);
-}
-.world-map {
-  height: 350px;
-  background: url("../images/world-map.svg") no-repeat center center;
-  background-size: contain;
 }
 .season-01 {
   background: #c71585;

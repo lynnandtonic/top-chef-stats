@@ -1,6 +1,5 @@
 .nav-main
   height: 45px
-  padding: 10px 20px
   position: relative
   background: #333
 
@@ -8,6 +7,7 @@
     color: white
 
   .nav-home
+    margin: 10px 20px
     float: left
 
   input.menu-toggle
@@ -16,6 +16,8 @@
     left: -100%
 
   label
+    padding: 10px 20px
+    background: purple
     float: right
     cursor: pointer
 
@@ -23,7 +25,6 @@
     display: none
 
     > li
-      width: 8.33%
       float: left
 
       a
@@ -50,5 +51,31 @@
     top: 45px
     left: 0
     background-image: linear-gradient(to right, steelblue, mediumvioletred)
-    border-bottom: 1px solid white(.3)
     box-shadow: 0 3px 3px black(.2)
+
+
+@media screen and (max-width: 500px)
+
+  .nav-main
+
+    ul > li
+      width: 25%
+      border-bottom: 1px solid white(.3)
+
+@media screen and (min-width: 501px)
+
+  .nav-main
+
+    ul > li
+      width: 16.66%
+      border-bottom: 1px solid white(.3)
+
+@media screen and (min-width: 951px)
+
+  .nav-main
+
+    ul > li
+      width: 8.33%
+
+    .menu-toggle:checked ~ ul
+      border-bottom: 1px solid white(.3)
