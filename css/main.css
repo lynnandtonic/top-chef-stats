@@ -149,13 +149,15 @@ body {
   color: white;
 }
 a {
-  padding-bottom: 2px;
   display: inline-block;
   text-decoration: none;
   color: #0ff;
 }
+p a {
+  border-bottom: 1px dotted transparent;
+}
 p a:hover {
-  border-bottom: 1px dotted;
+  border-bottom: 1px dotted #0ff;
 }
 h1 {
   margin: 0 20px 15px;
@@ -181,6 +183,7 @@ h2 {
   margin: 0 auto 30px;
   padding: 30px 15px;
   background: rgba(0,0,0,0.1);
+  text-align: center;
 }
 @media screen and (min-width: 701px) {
   .intro {
@@ -194,7 +197,7 @@ h2 {
 }
 .intro p {
   max-width: 500px;
-  margin: 0 auto;
+  margin: 0 auto 20px;
 }
 .footnote {
   font-size: 14px;
@@ -231,8 +234,9 @@ h2 {
 }
 .nav-main label {
   padding: 10px 20px;
-  background: #800080;
   float: right;
+  background: #800080;
+  border-left: 1px solid rgba(255,255,255,0.2);
   cursor: pointer;
 }
 .nav-main ul {
