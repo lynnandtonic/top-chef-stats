@@ -2,95 +2,93 @@
   list-style: none
 
   li
-    width: 16.666%
-    margin-bottom: 20px
-    float: left
+    width: 100%
+    margin: 0 0 15px
+    padding: 25px 0 25px 60px
     position: relative
-    text-align: center
+    background-image: linear-gradient(to right, black(0) 20px, black(.2) 20px)
+    border-radius: 0 3px 3px 0
 
     .chef
-      width: 175px
-      height: 175px
-      margin: 0 auto 10px
+      width: 90px
+      height: @width
+      position: absolute
+      left: -30px
+      top: -10px
       background: no-repeat
+      background-size: 270px auto
 
     &:nth-child(1) .chef
       background-position: 0 0
     &:nth-child(2) .chef
-      background-position: -175px 0
+      background-position: -90px 0
     &:nth-child(3) .chef
-      background-position: -350px 0
+      background-position: -180px 0
     &:nth-child(4) .chef
-      background-position: 0 -175px
+      background-position: 0 -90px
     &:nth-child(5) .chef
-      background-position: -175px -175px
+      background-position: -90px -90px
     &:nth-child(6) .chef
-      background-position: -350px -175px
+      background-position: -180px -90px
     &:nth-child(7) .chef
-      background-position: 0 -350px
+      background-position: 0 -180px
     &:nth-child(8) .chef
-      background-position: -175px -350px
+      background-position: -90px -180px
     &:nth-child(9) .chef
-      background-position: -350px -350px
+      background-position: -180px -180px
     &:nth-child(10) .chef
-      background-position: 0 -525px
+      background-position: 0 -270px
     &:nth-child(11) .chef
-      background-position: -175px -525px
+      background-position: -90px -270px
     &:nth-child(12) .chef
-      background-position: -350px -525px
+      background-position: -180px -270px
     &:nth-child(13) .chef
-      background-position: 0 -700px
+      background-position: 0 -360px
     &:nth-child(14) .chef
-      background-position: -175px -700px
+      background-position: -90px -360px
     &:nth-child(15) .chef
-      background-position: -350px -700px
+      background-position: -180px -360px
     &:nth-child(16) .chef
-      background-position: 0 -875px
+      background-position: 0 -450px
     &:nth-child(17) .chef
-      background-position: -175px -875px
+      background-position: -90px -450px
     &:nth-child(18) .chef
-      background-position: -350px -875px
+      background-position: -180px -450px
     &:nth-child(19) .chef
-      background-position: 0 -1050px
+      background-position: 0 -540px
     &:nth-child(20) .chef
-      background-position: -175px -1050px
+      background-position: -90px -540px
 
     span
-      margin-top: 30px
-      padding: 8px 10px 4px
+      display: block
       position: relative
-      display: inline-block
-      font-weight: bold
-      font-size: 16px
-
-      &:before
-        width: 80px
-        content: ''
-        display: inline-block
-        top: -25px
-        {centerHoriz}
-        font-size: 14px
-        line-height: 0
-        border-top: 10px solid black(.3)
-        border-bottom: 10px solid black(.3)
-        border-left: 5px solid transparent
-        border-right: 5px solid transparent
 
       &:after
-        content: ''
-        {centerHoriz}
-        top: -24px
-        font-size: 14px
+        padding: 5px 15px
+        position: absolute
+        right: 0
+        top: -5px
+        font-weight: bold
 
     &:first-child
       span:before
-        border-top-color: gold
-        border-bottom-color: gold
+        width: 0
+        height: 0
+        content: ''
+        position: absolute
+        right: -10px
+        top: 30px
+        border-style: solid
+        border-width: 10px 10px 0 0
+        border-color: goldenrod transparent transparent transparent
       span:after
-        top: -24px
         content: 'Winner'
+        right: -10px
+        background: gold
         color: brown
 
+    &:nth-child(2) span:after
+        content: '2nd'
     &:nth-child(2) span:after
         content: '2nd'
     &:nth-child(3) span:after

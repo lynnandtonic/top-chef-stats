@@ -460,121 +460,112 @@ h2 {
   list-style: none;
 }
 .ranking li {
-  width: 16.666%;
-  margin-bottom: 20px;
-  float: left;
+  width: 100%;
+  margin: 0 0 15px;
+  padding: 25px 0 25px 60px;
   position: relative;
-  text-align: center;
+  background-image: linear-gradient(to right, rgba(0,0,0,0) 20px, rgba(0,0,0,0.2) 20px);
+  border-radius: 0 3px 3px 0;
 }
 .ranking li .chef {
-  width: 175px;
-  height: 175px;
-  margin: 0 auto 10px;
+  width: 90px;
+  height: 90px;
+  position: absolute;
+  left: -30px;
+  top: -10px;
   background: no-repeat;
+  background-size: 270px auto;
 }
 .ranking li:nth-child(1) .chef {
   background-position: 0 0;
 }
 .ranking li:nth-child(2) .chef {
-  background-position: -175px 0;
+  background-position: -90px 0;
 }
 .ranking li:nth-child(3) .chef {
-  background-position: -350px 0;
+  background-position: -180px 0;
 }
 .ranking li:nth-child(4) .chef {
-  background-position: 0 -175px;
+  background-position: 0 -90px;
 }
 .ranking li:nth-child(5) .chef {
-  background-position: -175px -175px;
+  background-position: -90px -90px;
 }
 .ranking li:nth-child(6) .chef {
-  background-position: -350px -175px;
+  background-position: -180px -90px;
 }
 .ranking li:nth-child(7) .chef {
-  background-position: 0 -350px;
+  background-position: 0 -180px;
 }
 .ranking li:nth-child(8) .chef {
-  background-position: -175px -350px;
+  background-position: -90px -180px;
 }
 .ranking li:nth-child(9) .chef {
-  background-position: -350px -350px;
+  background-position: -180px -180px;
 }
 .ranking li:nth-child(10) .chef {
-  background-position: 0 -525px;
+  background-position: 0 -270px;
 }
 .ranking li:nth-child(11) .chef {
-  background-position: -175px -525px;
+  background-position: -90px -270px;
 }
 .ranking li:nth-child(12) .chef {
-  background-position: -350px -525px;
+  background-position: -180px -270px;
 }
 .ranking li:nth-child(13) .chef {
-  background-position: 0 -700px;
+  background-position: 0 -360px;
 }
 .ranking li:nth-child(14) .chef {
-  background-position: -175px -700px;
+  background-position: -90px -360px;
 }
 .ranking li:nth-child(15) .chef {
-  background-position: -350px -700px;
+  background-position: -180px -360px;
 }
 .ranking li:nth-child(16) .chef {
-  background-position: 0 -875px;
+  background-position: 0 -450px;
 }
 .ranking li:nth-child(17) .chef {
-  background-position: -175px -875px;
+  background-position: -90px -450px;
 }
 .ranking li:nth-child(18) .chef {
-  background-position: -350px -875px;
+  background-position: -180px -450px;
 }
 .ranking li:nth-child(19) .chef {
-  background-position: 0 -1050px;
+  background-position: 0 -540px;
 }
 .ranking li:nth-child(20) .chef {
-  background-position: -175px -1050px;
+  background-position: -90px -540px;
 }
 .ranking li span {
-  margin-top: 30px;
-  padding: 8px 10px 4px;
+  display: block;
   position: relative;
-  display: inline-block;
-  font-weight: bold;
-  font-size: 16px;
-}
-.ranking li span:before {
-  width: 80px;
-  content: '';
-  display: inline-block;
-  top: -25px;
-  position: absolute;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-  -moz-transform: translateX(-50%);
-  transform: translateX(-50%);
-  font-size: 14px;
-  line-height: 0;
-  border-top: 10px solid rgba(0,0,0,0.3);
-  border-bottom: 10px solid rgba(0,0,0,0.3);
-  border-left: 5px solid transparent;
-  border-right: 5px solid transparent;
 }
 .ranking li span:after {
-  content: '';
+  padding: 5px 15px;
   position: absolute;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-  -moz-transform: translateX(-50%);
-  transform: translateX(-50%);
-  top: -24px;
-  font-size: 14px;
+  right: 0;
+  top: -5px;
+  font-weight: bold;
 }
 .ranking li:first-child span:before {
-  border-top-color: #ffd700;
-  border-bottom-color: #ffd700;
+  width: 0;
+  height: 0;
+  content: '';
+  position: absolute;
+  right: -10px;
+  top: 30px;
+  border-style: solid;
+  border-width: 10px 10px 0 0;
+  border-color: #daa520 transparent transparent transparent;
 }
 .ranking li:first-child span:after {
-  top: -24px;
   content: 'Winner';
+  right: -10px;
+  background: #ffd700;
   color: #a52a2a;
+}
+.ranking li:nth-child(2) span:after {
+  content: '2nd';
 }
 .ranking li:nth-child(2) span:after {
   content: '2nd';
@@ -654,86 +645,74 @@ footer p {
   background: linear-gradient(170deg, #4682b4 0, #008b8b 50%, #c71585 100%);
 }
 .season-01 {
-  background: #c71585;
+  background: linear-gradient(170deg, #008b8b 0, #c71585 50%, #4682b4 100%);
 }
 .season-01 .ranking li .chef {
   background-image: url("/images/season-01.png");
-  background-size: 525px 700px;
 }
 .season-02 {
   background: #4682b4;
 }
 .season-02 .ranking li .chef {
   background-image: url("/images/season-02.png");
-  background-size: 525px 875px;
 }
 .season-03 {
   background: #40e0d0;
 }
 .season-03 .ranking li .chef {
   background-image: url("/images/season-03.png");
-  background-size: 525px 875px;
 }
 .season-04 {
   background: #800080;
 }
 .season-04 .ranking li .chef {
   background-image: url("/images/season-04.png");
-  background-size: 525px 1051px;
 }
 .season-05 {
   background: #ee82ee;
 }
 .season-05 .ranking li .chef {
   background-image: url("/images/season-05.png");
-  background-size: 525px 1051px;
 }
 .season-06 {
   background: #4682b4;
 }
 .season-06 .ranking li .chef {
   background-image: url("/images/season-06.png");
-  background-size: 525px 1050px;
 }
 .season-07 {
   background: #4682b4;
 }
 .season-07 .ranking li .chef {
   background-image: url("/images/season-07.png");
-  background-size: 525px 1050px;
 }
 .season-08 {
   background: #008080;
 }
 .season-08 .ranking li .chef {
   background-image: url("/images/season-08.png");
-  background-size: 525px 1050px;
 }
 .season-09 {
   background: #40e0d0;
 }
 .season-09 .ranking li .chef {
   background-image: url("/images/season-09.png");
-  background-size: 525px 1050px;
 }
 .season-10 {
   background: #800000;
 }
 .season-10 .ranking li .chef {
   background-image: url("/images/season-10.png");
-  background-size: 525px 1050px;
 }
 .season-11 {
   background: #008080;
 }
 .season-11 .ranking li .chef {
   background-image: url("/images/season-11.png");
-  background-size: 525px 1225px;
 }
 .season-12 {
   background: #008000;
 }
 .season-12 .ranking li .chef {
   background-image: url("/images/season-12.png");
-  background-size: 525px 1050px;
 }
