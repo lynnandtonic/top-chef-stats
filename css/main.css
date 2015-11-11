@@ -315,6 +315,9 @@ h2 {
   .grid-lg-3 {
     width: 33.33%;
   }
+  .grid-lg-3-1 {
+    width: 66.66%;
+  }
   .grid-lg-4 {
     width: 25%;
   }
@@ -322,17 +325,10 @@ h2 {
     width: 20%;
   }
 }
-.avatar {
-  width: 175px;
-  height: 175px;
-  margin: 0 auto 10px;
-  background: no-repeat;
-  background-size: contain;
-}
 .season {
   padding: 20px;
 }
-.stat img {
+.stat img:not(.avatar) {
   width: 100%;
   max-width: 100%;
 }
@@ -373,6 +369,28 @@ h2 {
   background: rgba(0,0,0,0.1);
   text-align: center;
 }
+.roster .avatar {
+  width: 90px;
+  height: 90px;
+  margin: 20px -5px 0;
+  position: relative;
+  z-index: 2;
+}
+.roster .winner {
+  display: inline-block;
+  position: relative;
+}
+.roster .winner:before {
+  padding: 2px 15px 2px 10px;
+  content: 'Winner';
+  position: absolute;
+  left: -67px;
+  bottom: 30px;
+  z-index: 1;
+  background: #ffd700;
+  font-weight: bold;
+  color: #a52a2a;
+}
 @media screen and (min-width: 701px) {
   .number {
     font-size: 85px;
@@ -402,6 +420,9 @@ h2 {
     margin: 0 0 80px;
     padding: 30px 0 20px;
     clear: left;
+  }
+  .restaurant-wars .number {
+    font-size: 40px;
   }
 }
 @media screen and (max-width: 700px) {
@@ -541,9 +562,9 @@ h2 {
   position: relative;
 }
 .ranking li span:after {
-  padding: 5px 15px;
+  padding: 5px 10px;
   position: absolute;
-  right: 0;
+  right: 5px;
   top: -5px;
   font-weight: bold;
 }
