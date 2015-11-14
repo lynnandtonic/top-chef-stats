@@ -363,6 +363,7 @@ h2 {
 .number .roster {
   position: absolute;
   right: 0;
+  text-align: right;
 }
 .name {
   margin-left: 10px;
