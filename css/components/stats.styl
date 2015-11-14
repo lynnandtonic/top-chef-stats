@@ -14,6 +14,10 @@
   span + span
     margin-left: 15px
 
+  .roster
+    position: absolute
+    right: 0
+
 .name
   margin-left: 10px
   display: inline-block
@@ -30,29 +34,24 @@
     display: block
     position: absolute
 
-.woman,
-.man
-  background: no-repeat left top
-
-.woman
-  background-image: url(../images/woman.svg)
-.man
-  background-image: url(../images/man.svg)
-
 .featured
   padding: 30px 20px 20px
   background: black(.1)
   text-align: center
 
 .restaurant-wars,
-.finale
+.finale,
+.relay-race
   .number
+    margin-bottom: 20px
     font-size: 40px
     line-height: 1.2
 
 .roster
+  h2
+    margin-bottom: 20px
   .avatar
-    margin: 20px -5px 0
+    margin: 0 -5px
     position: relative
     z-index: 2
   .winner
@@ -75,6 +74,9 @@
   .number
     font-size: 85px
 
+    .roster
+      top: 15px
+
   .stat
 
     h2
@@ -95,14 +97,6 @@
     .avatar
       top: -32px
       right: -45px
-
-    &.left
-      padding-left: 45px
-      padding-right: 10px
-      left: 0
-
-      .avatar
-        left: -(90px/2)
 
   .featured
     margin: 0 0 80px
@@ -142,6 +136,9 @@
 
       .number
         font-size: 55px
+
+        .roster
+          top: 8px
 
       .name
         padding: 8px 40px 8px 10px

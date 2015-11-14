@@ -12,15 +12,16 @@ block content
         span Season 02
         span Los Angeles
 
-    .grid
-      ol.ranking.grid-item.grid-sm-2
+    .grid.cf
+
+      ol.ranking.grid-item.grid-sm-2.grid-lg-3
         li
           div.chef
           span Ilan Hall
         li
           div.chef
           span Marcel Vigneron
-        li
+        li.fan-fave
           div.chef
           span Sam Talbot
         li
@@ -59,4 +60,50 @@ block content
         li
           div.chef
           span Suyai Steinhauer
+
+      .grid-item.grid-sm-2.grid-lg-3-1.p0
+        .stat.person.roster.grid-item.grid-sm-1.grid-lg-2
+          h2 Host & Judges
+          img.avatar(src='/images/padma-lakshmi.png')
+          img.avatar(src='/images/tom-colicchio.png')
+          img.avatar(src='/images/gail-simmons.png')
+        .stat.roster.grid-item.grid-sm-1.grid-lg-2
+          h2 Total Guest Judges
+          .number 16
+
+        .stat.person.grid-item.grid-sm-1.grid-lg-2
+          h2 Most Quickfire Wins
+          .number 5
+            .name Sam Talbot
+              img.avatar(src='/images/sam-talbot.png')
+        .stat.person.grid-item.grid-sm-1.grid-lg-2
+          h2 Most Elimination Wins
+          .number 3
+            .name Ilan Hall
+              img.avatar(src='/images/ilan-hall.png')
+
+        .stat.person.grid-item.grid-sm-1.grid-lg-2
+          h2 Most Overall Wins
+          .number 6
+            .name Sam Talbot
+              img.avatar(src='/images/sam-talbot.png')
+        .stat.person.grid-item.grid-sm-1.grid-lg-2
+          h2 Wins With Immunity
+          .number 1
+            .name Michael Midgley
+              img.avatar(src='/images/michael-midgley.png')
+
+        .featured.restaurant-wars
+          h2 Restaurant Wars Winner
+          .number None
+
+        .stat.person.grid-item.grid-sm-1.grid-lg-2
+          h2 Eliminated in Restaurant Wars
+          .number 1
+            .name Michael Midgley
+              img.avatar(src='/images/michael-midgley.png')
+
+        .featured.finale
+          h2 Finale Location
+          .number Waikoloa Village
 

@@ -63,28 +63,12 @@
       position: relative
 
       &:after
-        padding: 5px 10px
+        padding: 7px 10px
         position: absolute
         right: 5px
         top: -5px
         font-weight: bold
 
-    &:first-child
-      span:before
-        width: 0
-        height: 0
-        content: ''
-        position: absolute
-        right: -10px
-        top: 30px
-        border-style: solid
-        border-width: 10px 10px 0 0
-        border-color: goldenrod transparent transparent transparent
-      span:after
-        content: 'Winner'
-        right: -10px
-        background: gold
-        color: brown
 
     &:nth-child(2) span:after
         content: '2nd'
@@ -126,6 +110,38 @@
         content: '19th'
     &:nth-child(20) span:after
         content: '20th'
+
+    &:first-child,
+    &.fan-fave
+      span:before
+        width: 0
+        height: 0
+        content: ''
+        position: absolute
+        right: -10px
+        top: 25px
+        border-style: solid
+        border-width: 10px 10px 0 0
+      span:after
+        right: -10px
+        font-size: 16px
+        line-height: 1
+
+    &:first-child
+      span:before
+        border-color: goldenrod transparent transparent transparent
+      span:after
+        content: 'Winner'
+        background: gold
+        color: brown
+
+    &.fan-fave
+      span:before
+        border-color: indigo transparent transparent transparent
+      span:after
+        content: 'Fan Fave'
+        background: darkorchid
+        color: white
 
 @media screen and (min-width: 701px)
 
