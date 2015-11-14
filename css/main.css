@@ -325,8 +325,17 @@ h2 {
     width: 20%;
   }
 }
-.season {
-  padding: 20px;
+@media screen and (min-width: 701px) {
+  .avatar {
+    width: 90px;
+    height: 90px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .avatar {
+    width: 70px;
+    height: 70px;
+  }
 }
 .stat img:not(.avatar) {
   width: 100%;
@@ -351,6 +360,9 @@ h2 {
   font-weight: normal;
   line-height: 1;
 }
+.name:left {
+  margin-left: 0;
+}
 .name .avatar {
   display: block;
   position: absolute;
@@ -366,12 +378,16 @@ h2 {
   background-image: url("../images/man.svg");
 }
 .featured {
+  padding: 30px 20px 20px;
   background: rgba(0,0,0,0.1);
   text-align: center;
 }
+.restaurant-wars .number,
+.finale .number {
+  font-size: 40px;
+  line-height: 1.2;
+}
 .roster .avatar {
-  width: 90px;
-  height: 90px;
   margin: 20px -5px 0;
   position: relative;
   z-index: 2;
@@ -381,15 +397,15 @@ h2 {
   position: relative;
 }
 .roster .winner:before {
-  padding: 2px 15px 2px 10px;
-  content: 'Winner';
+  width: 100%;
+  height: 60%;
+  left: 0;
+  top: 25%;
+  content: '';
   position: absolute;
-  left: -67px;
-  bottom: 30px;
   z-index: 1;
   background: #ffd700;
-  font-weight: bold;
-  color: #a52a2a;
+  border-radius: 50%;
 }
 @media screen and (min-width: 701px) {
   .number {
@@ -398,31 +414,33 @@ h2 {
   .stat h2 {
     border-bottom: 1px solid rgba(255,255,255,0.5);
   }
-  .stat .woman,
-  .stat .man {
+  .woman,
+  .man {
     background-position: left center;
     background-size: auto 50px;
     padding-left: 40px;
   }
-  .stat .name {
+  .name {
     padding: 8px 45px 6px 10px;
     top: 50px;
     right: 40px;
     font-size: 16px;
   }
-  .stat .name .avatar {
-    width: 90px;
-    height: 90px;
+  .name .avatar {
     top: -32px;
     right: -45px;
   }
+  .name.left {
+    padding-left: 45px;
+    padding-right: 10px;
+    left: 0;
+  }
+  .name.left .avatar {
+    left: -45px;
+  }
   .featured {
     margin: 0 0 80px;
-    padding: 30px 0 20px;
     clear: left;
-  }
-  .restaurant-wars .number {
-    font-size: 40px;
   }
 }
 @media screen and (max-width: 700px) {
@@ -464,17 +482,11 @@ h2 {
     font-size: 15px;
   }
   .stat.person .name .avatar {
-    width: 70px;
-    height: 70px;
     top: -15px;
     right: -35px;
   }
   .featured {
     margin: 30px 0;
-    padding: 30px 0 20px;
-  }
-  .featured .number {
-    font-size: 40px;
   }
 }
 .ranking {
@@ -483,7 +495,7 @@ h2 {
 .ranking li {
   width: 100%;
   margin: 0 0 15px;
-  padding: 25px 0 25px 60px;
+  padding: 25px 0;
   position: relative;
   background-image: linear-gradient(to right, rgba(0,0,0,0) 20px, rgba(0,0,0,0.2) 20px);
   border-radius: 0 3px 3px 0;
@@ -492,7 +504,6 @@ h2 {
   width: 90px;
   height: 90px;
   position: absolute;
-  left: -30px;
   top: -10px;
   background: no-repeat;
   background-size: 270px auto;
@@ -645,6 +656,22 @@ h2 {
 .ranking li:nth-child(20) span:after {
   content: '20th';
 }
+@media screen and (min-width: 701px) {
+  .ranking li {
+    padding-left: 60px;
+  }
+  .ranking li .chef {
+    left: -30px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .ranking li {
+    padding-left: 75px;
+  }
+  .ranking li .chef {
+    left: -15px;
+  }
+}
 footer {
   padding: 40px 20px;
   background: #333;
@@ -662,77 +689,45 @@ footer p {
 .center {
   text-align: center;
 }
-.home {
-  background: linear-gradient(170deg, #4682b4 0, #008b8b 50%, #c71585 100%);
-}
-.season-01 {
+.season {
   background: linear-gradient(170deg, #008b8b 0, #c71585 50%, #4682b4 100%);
+  padding: 20px;
+}
+.season.home {
+  background: linear-gradient(170deg, #4682b4 0, #008b8b 50%, #c71585 100%);
 }
 .season-01 .ranking li .chef {
   background-image: url("/images/season-01.png");
 }
-.season-02 {
-  background: #4682b4;
-}
 .season-02 .ranking li .chef {
   background-image: url("/images/season-02.png");
-}
-.season-03 {
-  background: #40e0d0;
 }
 .season-03 .ranking li .chef {
   background-image: url("/images/season-03.png");
 }
-.season-04 {
-  background: #800080;
-}
 .season-04 .ranking li .chef {
   background-image: url("/images/season-04.png");
-}
-.season-05 {
-  background: #ee82ee;
 }
 .season-05 .ranking li .chef {
   background-image: url("/images/season-05.png");
 }
-.season-06 {
-  background: #4682b4;
-}
 .season-06 .ranking li .chef {
   background-image: url("/images/season-06.png");
-}
-.season-07 {
-  background: #4682b4;
 }
 .season-07 .ranking li .chef {
   background-image: url("/images/season-07.png");
 }
-.season-08 {
-  background: #008080;
-}
 .season-08 .ranking li .chef {
   background-image: url("/images/season-08.png");
-}
-.season-09 {
-  background: #40e0d0;
 }
 .season-09 .ranking li .chef {
   background-image: url("/images/season-09.png");
 }
-.season-10 {
-  background: #800000;
-}
 .season-10 .ranking li .chef {
   background-image: url("/images/season-10.png");
 }
-.season-11 {
-  background: #008080;
-}
 .season-11 .ranking li .chef {
   background-image: url("/images/season-11.png");
-}
-.season-12 {
-  background: #008000;
 }
 .season-12 .ranking li .chef {
   background-image: url("/images/season-12.png");

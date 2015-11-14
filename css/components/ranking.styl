@@ -4,7 +4,7 @@
   li
     width: 100%
     margin: 0 0 15px
-    padding: 25px 0 25px 60px
+    padding: 25px 0
     position: relative
     background-image: linear-gradient(to right, black(0) 20px, black(.2) 20px)
     border-radius: 0 3px 3px 0
@@ -13,7 +13,6 @@
       width: 90px
       height: @width
       position: absolute
-      left: -30px
       top: -10px
       background: no-repeat
       background-size: 270px auto
@@ -127,3 +126,24 @@
         content: '19th'
     &:nth-child(20) span:after
         content: '20th'
+
+@media screen and (min-width: 701px)
+
+  .ranking
+
+    li
+      padding-left: 60px
+
+      .chef
+        left: -30px
+
+@media screen and (max-width: 700px)
+
+  .ranking
+
+    li
+      padding-left: 75px
+
+      .chef
+        left: -15px
+
