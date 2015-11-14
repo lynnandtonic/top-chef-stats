@@ -39,6 +39,10 @@
   background: black(.1)
   text-align: center
 
+.restaurant-wars
+  .roster .avatar
+    margin-bottom: 15px
+
 .restaurant-wars,
 .finale,
 .relay-race
@@ -59,14 +63,16 @@
     position: relative
     &:before
       width: 100%
-      height: 60%
-      left: 0
-      top: 25%
-      content: ''
+      display: block
       position: absolute
+      left: 0
+      top: 92px
+      content: 'WINNER!'
       z-index: 1
-      background: gold
-      border-radius: 50%
+      font-size: 11px
+      font-weight: bold
+      letter-spacing: 1px
+      color: white
 
 
 @media screen and (min-width: 701px)

@@ -385,6 +385,9 @@ h2 {
   background: rgba(0,0,0,0.1);
   text-align: center;
 }
+.restaurant-wars .roster .avatar {
+  margin-bottom: 15px;
+}
 .restaurant-wars .number,
 .finale .number,
 .relay-race .number {
@@ -406,14 +409,16 @@ h2 {
 }
 .roster .winner:before {
   width: 100%;
-  height: 60%;
-  left: 0;
-  top: 25%;
-  content: '';
+  display: block;
   position: absolute;
+  left: 0;
+  top: 92px;
+  content: 'WINNER!';
   z-index: 1;
-  background: #ffd700;
-  border-radius: 50%;
+  font-size: 11px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: white;
 }
 @media screen and (min-width: 701px) {
   .number {
