@@ -7,56 +7,140 @@ block content
 
   .season.season-09
 
-    h1
-      span Season 09
-      span Texas
+    .intro
+      h1
+        span Season 09
+        span Texas
 
-    ol.ranking.cf
-      li
-        div.chef
-        span Paul Qui
-      li
-        div.chef
-        span Sarah Grueneberg
-      li
-        div.chef
-        span Lindsay Autry
-      li
-        div.chef
-        span Beverly Kim
-      li
-        div.chef
-        span Edward Lee
-      li
-        div.chef
-        span Grayson Schmitz
-      li
-        div.chef
-        span Chris Jones
-      li
-        div.chef
-        span Ty-Lör Boring
-      li
-        div.chef
-        span Chris Crary
-      li
-        div.chef
-        span Heather Terhune
-      li
-        div.chef
-        span Nyesha Arrington
-      li
-        div.chef
-        span Dakota Weiss
-      li
-        div.chef
-        span Whitney Otawka
-      li
-        div.chef
-        span Chuy Valencia
-      li
-        div.chef
-        span Richie Farina
-      li
-        div.chef
-        span Keith Rhodes
+    .grid.cf
+
+      ol.ranking.grid-item.grid-sm-2.grid-lg-3
+        li
+          div.chef
+          span Paul Qui
+        li
+          div.chef
+          span Sarah Grueneberg
+        li
+          div.chef
+          span Lindsay Autry
+        li
+          div.chef
+          span Beverly Kim
+        li
+          div.chef
+          span Edward Lee
+        li
+          div.chef
+          span Grayson Schmitz
+        li
+          div.chef
+          span Chris Jones
+        li
+          div.chef
+          span Ty-Lör Boring
+        li.fan-fave
+          div.chef
+          span Chris Crary
+        li
+          div.chef
+          span Heather Terhune
+        li
+          div.chef
+          span Nyesha Arrington
+        li
+          div.chef
+          span Dakota Weiss
+        li
+          div.chef
+          span Whitney Otawka
+        li
+          div.chef
+          span Chuy Valencia
+        li
+          div.chef
+          span Richie Farina
+        li
+          div.chef
+          span Keith Rhodes
+
+
+      .grid-item.grid-sm-2.grid-lg-3-1.p0
+
+        .stat.person.roster.grid-item.grid-sm-1
+          h2 Host & Judges
+          img.avatar(src='/images/padma-lakshmi.png')
+          img.avatar(src='/images/tom-colicchio.png')
+          img.avatar(src='/images/gail-simmons.png')
+          img.avatar(src='/images/emeril-lagasse.png')
+          img.avatar(src='/images/hugh-acheson.png')
+
+        .stat.grid-item.grid-sm-1.grid-lg-2
+          h2 Total Guest Judges
+          .number 15
+
+        .stat.person.grid-item.grid-sm-1.grid-lg-2
+          h2 Wins With Immunity
+          .number 0
+
+        .stat.person.grid-item.grid-sm-1
+          h2 Most Quickfire Wins
+          .number 2
+            .roster
+              img.avatar(src='/images/lindsay-autry.png')
+              img.avatar(src='/images/paul-qui.png')
+              img.avatar(src='/images/grayson-schmitz.png')
+              img.avatar(src='/images/sarah-grueneberg.png')
+              img.avatar(src='/images/ty-lor-boring.png')
+
+        .stat.person.grid-item.grid-sm-1.grid-lg-2
+          h2 Most Elimination Wins
+          .number 9
+            .name Paul Qui
+              img.avatar(src='/images/paul-qui.png')
+
+        .stat.person.grid-item.grid-sm-1.grid-lg-2
+          h2 Most Overall Wins
+          .number 11
+            .name Paul Qui
+              img.avatar(src='/images/paul-qui.png')
+
+        .featured.restaurant-wars
+          h2 Restaurant Wars Winner
+          .number Half Bushel
+          .roster.center
+            .winner
+              img.avatar(src='/images/beverly-kim.png')
+            img.avatar(src='/images/sarah-grueneberg.png')
+            img.avatar(src='/images/lindsay-autry.png')
+            img.avatar(src='/images/grayson-schmitz.png')
+
+        .stat.person.grid-item.grid-sm-1.grid-lg-2
+          h2 Eliminated in Restaurant Wars
+          .number 1
+            .name Ty-Lör Boring
+              img.avatar(src='/images/ty-lor-boring.png')
+
+        .stat.person.grid-item.grid-sm-1.grid-lg-2
+          h2 Total Cars Won
+          .number 2
+            .roster
+              img.avatar(src='/images/heather-terhune.png')
+              img.avatar(src='/images/sarah-grueneberg.png')
+
+        .stat.person.grid-item.grid-sm-1
+          h2 Most Cash Won by a Non-Winner
+          .number $30k
+            .name Sarah Grueneberg
+              img.avatar(src='/images/sarah-grueneberg.png')
+
+        .featured.relay-race
+          h2 Mise en place Relay Race Winner
+          .number Grayson & Chris
+          .roster.center
+              img.avatar(src='/images/grayson-schmitz.png')
+              img.avatar(src='/images/chris-jones.png')
+
+        .featured.finale
+          h2 Finale Location
+          .number Vancouver
