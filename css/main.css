@@ -179,6 +179,9 @@ h1 span:last-of-type {
 h2 {
   font-size: 18px;
 }
+em {
+  font-style: italic;
+}
 .intro {
   margin: 0 auto 30px;
   padding: 30px 15px;
@@ -724,6 +727,9 @@ footer p {
 .season.home {
   background: linear-gradient(170deg, #4682b4 0, #008b8b 50%, #c71585 100%);
 }
+.season.glossary {
+  background: linear-gradient(170deg, #4682b4 0, #008b8b 50%);
+}
 .season-01 .ranking li .chef {
   background-image: url("/images/season-01.png");
 }
@@ -759,4 +765,27 @@ footer p {
 }
 .season-12 .ranking li .chef {
   background-image: url("/images/season-12.png");
+}
+.glossary-list {
+  max-width: 550px;
+  margin: 0 auto 40px;
+}
+.glossary-list dt {
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 20px;
+}
+.glossary-list dd {
+  margin-bottom: 40px;
+}
+.glossary-list p {
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+.glossary-list ol {
+  list-style: decimal;
+  padding-left: 45px;
+}
+.glossary-list ol li {
+  margin-bottom: 10px;
 }
