@@ -15,9 +15,12 @@
     margin-left: 15px
 
   .roster
+    padding-left: 50px
     position: absolute
     right: 0
-    text-align: right
+
+    .avatar
+      float: right
 
 .name
   margin-left: 10px
@@ -67,7 +70,6 @@
       display: block
       position: absolute
       left: 0
-      top: 92px
       content: 'WINNER!'
       z-index: 1
       font-size: 11px
@@ -108,6 +110,15 @@
   .featured
     margin: 0 0 80px
     clear: left
+
+  .roster
+    .winner:before
+      top: 92px
+
+@media screen and (min-width: 701px) and (max-width: 1000px)
+
+  .stat.roster-lg
+    min-height: 240px
 
 @media screen and (max-width: 700px)
 
@@ -159,3 +170,12 @@
 
   .featured
     margin: 30px 0
+
+  .roster
+    .winner:before
+      top: 75px
+
+@media screen and (max-width: 390px)
+
+  .stat.roster-lg
+    min-height: 190px

@@ -364,9 +364,12 @@ em {
   margin-left: 15px;
 }
 .number .roster {
+  padding-left: 50px;
   position: absolute;
   right: 0;
-  text-align: right;
+}
+.number .roster .avatar {
+  float: right;
 }
 .name {
   margin-left: 10px;
@@ -416,7 +419,6 @@ em {
   display: block;
   position: absolute;
   left: 0;
-  top: 92px;
   content: 'WINNER!';
   z-index: 1;
   font-size: 11px;
@@ -453,6 +455,14 @@ em {
   .featured {
     margin: 0 0 80px;
     clear: left;
+  }
+  .roster .winner:before {
+    top: 92px;
+  }
+}
+@media screen and (min-width: 701px) and (max-width: 1000px) {
+  .stat.roster-lg {
+    min-height: 240px;
   }
 }
 @media screen and (max-width: 700px) {
@@ -502,6 +512,14 @@ em {
   }
   .featured {
     margin: 30px 0;
+  }
+  .roster .winner:before {
+    top: 75px;
+  }
+}
+@media screen and (max-width: 390px) {
+  .stat.roster-lg {
+    min-height: 190px;
   }
 }
 .ranking {
@@ -591,7 +609,7 @@ em {
   padding: 7px 10px;
   position: absolute;
   right: 5px;
-  top: -5px;
+  top: -6px;
   font-weight: bold;
 }
 .ranking li:nth-child(2) span:after {
