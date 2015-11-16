@@ -22,61 +22,58 @@
     border-left: 1px solid white(.2)
     cursor: pointer
 
-  ul
+  .nav-seasons
     display: none
-
-    > li
-      float: left
-
-      a
-        padding: 10px
-        display: block
-
-      span
-        display: block
-
-      span:first-of-type
-        font-size: 24px
-        font-weight: bold
-
-      span:nth-of-type(2)
-        font-size: 15px
-
-  .menu-toggle:checked ~ ul > li:not(:last-child)
-    border-right: 1px solid white(.3)
-
-  .menu-toggle:checked ~ ul
-    width: 100%
-    display: block
     position: absolute
     top: 45px
     left: 0
-    background-image: linear-gradient(to right, steelblue, mediumvioletred)
-    box-shadow: 0 3px 3px black(.2)
+    z-index: 100
 
+  .menu-toggle:checked ~ .nav-seasons
+    display: block
+
+.nav-seasons
+  width: 100%
+  background-image: linear-gradient(to right, steelblue, mediumvioletred)
+  border-top: 1px solid white(.3)
+  box-shadow: 0 3px 3px black(.2)
+
+  li
+    float: left
+    border-bottom: 1px solid white(.3)
+
+    &:not(:last-child)
+      border-right: 1px solid white(.3)
+
+    a
+      padding: 10px
+      display: block
+      color: white
+
+      &:hover
+        background: black(.1)
+
+    span
+      display: block
+
+    span:first-of-type
+      font-size: 24px
+      font-weight: bold
+
+    span:nth-of-type(2)
+      font-size: 15px
 
 @media screen and (max-width: 500px)
 
-  .nav-main
-
-    ul > li
-      width: 25%
-      border-bottom: 1px solid white(.3)
+  .nav-seasons li
+    width: 25%
 
 @media screen and (min-width: 501px)
 
-  .nav-main
-
-    ul > li
-      width: 16.66%
-      border-bottom: 1px solid white(.3)
+  .nav-seasons li
+    width: 16.66%
 
 @media screen and (min-width: 951px)
 
-  .nav-main
-
-    ul > li
-      width: 8.33%
-
-    .menu-toggle:checked ~ ul
-      border-bottom: 1px solid white(.3)
+  .nav-seasons li
+    width: 8.33%
