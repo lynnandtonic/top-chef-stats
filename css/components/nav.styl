@@ -68,10 +68,17 @@
   .nav-seasons li
     width: 25%
 
-@media screen and (min-width: 501px)
+    &:nth-child(4),
+    &:nth-child(8)
+      border-right: none
+
+@media screen and (min-width: 501px) and (max-width: 950px)
 
   .nav-seasons li
     width: 16.66%
+
+    &:nth-child(6)
+      border-right: none
 
 @media screen and (min-width: 951px)
 
