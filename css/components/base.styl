@@ -25,6 +25,12 @@ body
   background-color: mediumorchid
   color: white
 
+h1, p
+  margin-bottom: 20px
+
+h1
+  font-weight: bold
+
 a
   display: inline-block
   text-decoration: none
@@ -35,46 +41,19 @@ p a
   &:hover
     border-bottom: 1px dotted cyan
 
-h1
-  margin: 0 20px 15px
-  font-size: 50px
-  font-weight: bold
-  text-align: center
-
-  @media screen and (max-width: 500px)
-    font-size: 35px
-
-  span
-    display: block
-
-    &:last-of-type
-      font-size: 30px
-
-h2
-  font-size: 18px
+p
+  margin: 0 0 20px
 
 em
   font-style: italic
 
-.intro
-  margin: 0 auto 30px
-  padding: 30px 15px
-  background: black(.1)
-  text-align: center
-
-  @media screen and (min-width: 701px)
-    margin-bottom: 60px
-  @media screen and (min-width: 1001px)
-    margin-bottom: 100px
-
-  p
-    max-width: 500px
-    margin: 0 auto 20px
+img:not(.avatar)
+  width: 100%
+  max-width: 100%
 
 .footnote
   font-size: 14px
   color: white(.6)
-
 
 // Clearfix
 .cf,

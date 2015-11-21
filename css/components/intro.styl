@@ -1,0 +1,40 @@
+.intro
+  margin: 0 auto 30px
+  padding: 30px 15px
+  background: black(.1)
+  text-align: center
+
+  h1
+    font-size: 45px
+
+    span
+      display: block
+    span:last-child
+      font-size: 30px
+
+  h2
+    margin-bottom: 20px
+    font-size: 24px
+
+  p
+    max-width: 500px
+    margin-left: auto
+    margin-right: auto
+
+@media screen and (max-width: 500px)
+
+  .intro h1
+    font-size: 35px
+
+    span:last-child
+      font-size: 20px
+
+@media screen and (min-width: $bp-small + 1) and (max-width: $bp-large)
+
+  .intro
+    margin-bottom: 60px
+
+@media screen and (min-width: $bp-large + 1)
+
+  .intro
+    margin-bottom: 100px

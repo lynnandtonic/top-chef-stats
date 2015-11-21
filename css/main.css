@@ -135,7 +135,7 @@ html {
 body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 18px;
   line-height: 1.4;
   color: white;
@@ -148,6 +148,13 @@ body {
   background-color: #ba55d3;
   color: white;
 }
+h1,
+p {
+  margin-bottom: 20px;
+}
+h1 {
+  font-weight: bold;
+}
 a {
   display: inline-block;
   text-decoration: none;
@@ -159,48 +166,15 @@ p a {
 p a:hover {
   border-bottom: 1px dotted #0ff;
 }
-h1 {
-  margin: 0 20px 15px;
-  font-size: 50px;
-  font-weight: bold;
-  text-align: center;
-}
-@media screen and (max-width: 500px) {
-  h1 {
-    font-size: 35px;
-  }
-}
-h1 span {
-  display: block;
-}
-h1 span:last-of-type {
-  font-size: 30px;
-}
-h2 {
-  font-size: 18px;
+p {
+  margin: 0 0 20px;
 }
 em {
   font-style: italic;
 }
-.intro {
-  margin: 0 auto 30px;
-  padding: 30px 15px;
-  background: rgba(0,0,0,0.1);
-  text-align: center;
-}
-@media screen and (min-width: 701px) {
-  .intro {
-    margin-bottom: 60px;
-  }
-}
-@media screen and (min-width: 1001px) {
-  .intro {
-    margin-bottom: 100px;
-  }
-}
-.intro p {
-  max-width: 500px;
-  margin: 0 auto 20px;
+img:not(.avatar) {
+  width: 100%;
+  max-width: 100%;
 }
 .footnote {
   font-size: 14px;
@@ -252,9 +226,12 @@ em {
 .nav-main .menu-toggle:checked ~ .nav-seasons {
   display: block;
 }
+.nav-main .nav-seasons {
+  background-image: linear-gradient(to right, #4682b4, #c71585);
+}
 .nav-seasons {
   width: 100%;
-  background-image: linear-gradient(to right, #4682b4, #c71585);
+  background-image: linear-gradient(to right, #4682b4, #008b8b);
   border-top: 1px solid rgba(255,255,255,0.3);
   box-shadow: 0 3px 3px rgba(0,0,0,0.2);
 }
@@ -305,6 +282,11 @@ em {
     width: 8.33%;
   }
 }
+@media screen and (max-width: 700px) {
+  .grid {
+    padding-bottom: 40px;
+  }
+}
 @media screen and (min-width: 701px) {
   .grid-item {
     margin: 0 0 30px;
@@ -316,6 +298,9 @@ em {
   }
   .grid-sm-2 {
     width: 50%;
+  }
+  .grid-sm-3 {
+    width: 33.33%;
   }
 }
 @media screen and (min-width: 1001px) {
@@ -339,6 +324,48 @@ em {
     width: 20%;
   }
 }
+.intro {
+  margin: 0 auto 30px;
+  padding: 30px 15px;
+  background: rgba(0,0,0,0.1);
+  text-align: center;
+}
+.intro h1 {
+  font-size: 45px;
+}
+.intro h1 span {
+  display: block;
+}
+.intro h1 span:last-child {
+  font-size: 30px;
+}
+.intro h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+.intro p {
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (max-width: 500px) {
+  .intro h1 {
+    font-size: 35px;
+  }
+  .intro h1 span:last-child {
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 701px) and (max-width: 1000px) {
+  .intro {
+    margin-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1001px) {
+  .intro {
+    margin-bottom: 100px;
+  }
+}
 @media screen and (min-width: 701px) {
   .avatar {
     width: 90px;
@@ -360,29 +387,25 @@ em {
 .icon.man {
   background-image: url("../images/man.svg");
 }
-.stat img:not(.avatar) {
-  width: 100%;
-  max-width: 100%;
-}
-.number {
+.stat .number {
   position: relative;
   font-weight: bold;
 }
-.number span {
+.stat .number span {
   display: inline-block;
 }
-.number span + span {
+.stat .number span + span {
   margin-left: 15px;
 }
-.number .roster {
+.stat .number .roster {
   padding-left: 50px;
   position: absolute;
   right: 0;
 }
-.number .roster .avatar {
+.stat .number .roster .avatar {
   float: right;
 }
-.name {
+.stat .name {
   margin-left: 10px;
   display: inline-block;
   position: absolute;
@@ -391,30 +414,145 @@ em {
   font-weight: normal;
   line-height: 1;
 }
-.name:left {
-  margin-left: 0;
-}
-.name .avatar {
+.stat .name .avatar {
   display: block;
   position: absolute;
 }
+@media screen and (max-width: 700px) {
+  .stat:not(.person) {
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.5);
+  }
+  .stat:not(.person) h2 {
+    padding-top: 10px;
+    float: left;
+  }
+  .stat:not(.person) .number {
+    text-align: right;
+    font-size: 30px;
+  }
+  .stat:not(.person) .woman,
+  .stat:not(.person) .man {
+    background-position: left 9px;
+    background-size: auto 23px;
+    padding-left: 23px;
+  }
+  .stat.person h2 {
+    padding: 20px 0 5px;
+    border-bottom: 1px solid rgba(255,255,255,0.5);
+  }
+  .stat.person .number {
+    font-size: 55px;
+  }
+  .stat.person .number .roster {
+    top: 8px;
+  }
+  .stat.person .name {
+    padding: 8px 40px 8px 10px;
+    top: 25px;
+    right: 30px;
+    font-size: 15px;
+  }
+  .stat.person .name .avatar {
+    top: -15px;
+    right: -35px;
+  }
+}
+@media screen and (min-width: 701px) {
+  .stat h2 {
+    border-bottom: 1px solid rgba(255,255,255,0.5);
+  }
+  .stat .number {
+    font-size: 85px;
+  }
+  .stat .number .roster {
+    top: 15px;
+  }
+  .stat .name {
+    padding: 8px 45px 6px 10px;
+    top: 50px;
+    right: 40px;
+    font-size: 16px;
+  }
+  .stat .name .avatar {
+    top: -32px;
+    right: -45px;
+  }
+  .stat .woman,
+  .stat .man {
+    background-position: left center;
+    background-size: auto 50px;
+    padding-left: 40px;
+  }
+}
 .featured {
-  padding: 30px 20px 20px;
+  padding: 30px 15px 20px;
   background: rgba(0,0,0,0.1);
   text-align: center;
+  clear: left;
 }
-.restaurant-wars .roster .avatar {
-  margin-bottom: 15px;
+.featured .number,
+.featured .phrase {
+  font-weight: bold;
 }
-.restaurant-wars .number,
-.finale .number,
-.relay-race .number {
+.featured .phrase {
+  margin-top: 5px;
   margin-bottom: 20px;
   font-size: 40px;
   line-height: 1.2;
 }
-.roster h2 {
-  margin-bottom: 20px;
+.featured.restaurant-wars .avatar {
+  margin-bottom: 15px;
+}
+.featured.phrase-list {
+  background: rgba(255,255,255,0.1);
+  border-top: 1px solid rgba(255,255,255,0.2);
+  border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+.featured.phrase-list .phrase {
+  margin-bottom: 40px;
+}
+.featured.phrase-list p {
+  margin-bottom: 8px;
+  padding: 5px 45px 5px 10px;
+  position: relative;
+  background: rgba(0,0,0,0.05);
+  border-radius: 3px;
+}
+.featured.phrase-list p span {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  transform: translateY(-50%);
+  right: 10px;
+  font-size: 12px;
+  font-weight: bold;
+}
+@media screen and (max-width: 700px) {
+  .featured {
+    margin: 30px 0;
+  }
+  .featured .number {
+    font-size: 40px;
+  }
+  .featured .phrase {
+    font-size: 25px;
+  }
+  .featured.phrase-list .grid-item {
+    margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 701px) {
+  .featured {
+    margin: 0 0 80px;
+  }
+  .featured .number {
+    font-size: 85px;
+  }
+  .featured.phrase-list .grid-item {
+    margin-bottom: 20px;
+  }
 }
 .roster .avatar {
   margin: 0 -5px;
@@ -437,36 +575,20 @@ em {
   letter-spacing: 1px;
   color: white;
 }
+h2 + .roster {
+  margin-top: 15px;
+}
+@media screen and (max-width: 390px) {
+  .stat.roster-lg {
+    min-height: 190px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .roster .winner:before {
+    top: 75px;
+  }
+}
 @media screen and (min-width: 701px) {
-  .number {
-    font-size: 85px;
-  }
-  .number .roster {
-    top: 15px;
-  }
-  .stat h2 {
-    border-bottom: 1px solid rgba(255,255,255,0.5);
-  }
-  .woman,
-  .man {
-    background-position: left center;
-    background-size: auto 50px;
-    padding-left: 40px;
-  }
-  .name {
-    padding: 8px 45px 6px 10px;
-    top: 50px;
-    right: 40px;
-    font-size: 16px;
-  }
-  .name .avatar {
-    top: -32px;
-    right: -45px;
-  }
-  .featured {
-    margin: 0 0 80px;
-    clear: left;
-  }
   .roster .winner:before {
     top: 92px;
   }
@@ -476,63 +598,6 @@ em {
     min-height: 240px;
   }
 }
-@media screen and (max-width: 700px) {
-  .stat:not(.person) {
-    padding: 10px 0;
-    border-bottom: 1px solid rgba(255,255,255,0.5);
-  }
-  .stat:not(.person):last-child {
-    border-bottom: none;
-  }
-  .stat:not(.person) h2 {
-    padding-top: 10px;
-    float: left;
-  }
-  .stat:not(.person) .number {
-    text-align: right;
-    font-size: 30px;
-  }
-  .stat:not(.person) .woman,
-  .stat:not(.person) .man {
-    background-position: left 9px;
-    background-size: auto 23px;
-    padding-left: 23px;
-  }
-  .stat.person {
-    margin: 15px 0;
-  }
-  .stat.person h2 {
-    padding: 20px 0 5px;
-    border-bottom: 1px solid rgba(255,255,255,0.5);
-  }
-  .stat.person .number {
-    font-size: 55px;
-  }
-  .stat.person .number .roster {
-    top: 8px;
-  }
-  .stat.person .name {
-    padding: 8px 40px 8px 10px;
-    top: 25px;
-    right: 30px;
-    font-size: 15px;
-  }
-  .stat.person .name .avatar {
-    top: -15px;
-    right: -35px;
-  }
-  .featured {
-    margin: 30px 0;
-  }
-  .roster .winner:before {
-    top: 75px;
-  }
-}
-@media screen and (max-width: 390px) {
-  .stat.roster-lg {
-    min-height: 190px;
-  }
-}
 .ranking {
   list-style: none;
 }
@@ -540,6 +605,7 @@ em {
   width: 100%;
   margin: 0 0 15px;
   padding: 25px 0;
+  padding-left: 60px;
   position: relative;
   background-image: linear-gradient(to right, rgba(0,0,0,0) 20px, rgba(0,0,0,0.2) 20px);
   border-radius: 0 3px 3px 0;
@@ -716,20 +782,84 @@ em {
   background: #9932cc;
   color: white;
 }
+@media screen and (max-width: 700px) {
+  .ranking li {
+    padding: 15px 0;
+    padding-left: 55px;
+  }
+  .ranking li .chef {
+    left: -15px;
+    width: 70px;
+    height: 70px;
+    background-size: 210px auto;
+  }
+  .ranking li:nth-child(1) .chef {
+    background-position: 0 0;
+  }
+  .ranking li:nth-child(2) .chef {
+    background-position: -70px 0;
+  }
+  .ranking li:nth-child(3) .chef {
+    background-position: -140px 0;
+  }
+  .ranking li:nth-child(4) .chef {
+    background-position: 0 -70px;
+  }
+  .ranking li:nth-child(5) .chef {
+    background-position: -70px -70px;
+  }
+  .ranking li:nth-child(6) .chef {
+    background-position: -140px -70px;
+  }
+  .ranking li:nth-child(7) .chef {
+    background-position: 0 -140px;
+  }
+  .ranking li:nth-child(8) .chef {
+    background-position: -70px -140px;
+  }
+  .ranking li:nth-child(9) .chef {
+    background-position: -140px -140px;
+  }
+  .ranking li:nth-child(10) .chef {
+    background-position: 0 -210px;
+  }
+  .ranking li:nth-child(11) .chef {
+    background-position: -70px -210px;
+  }
+  .ranking li:nth-child(12) .chef {
+    background-position: -140px -210px;
+  }
+  .ranking li:nth-child(13) .chef {
+    background-position: 0 -280px;
+  }
+  .ranking li:nth-child(14) .chef {
+    background-position: -70px -280px;
+  }
+  .ranking li:nth-child(15) .chef {
+    background-position: -140px -280px;
+  }
+  .ranking li:nth-child(16) .chef {
+    background-position: 0 -350px;
+  }
+  .ranking li:nth-child(17) .chef {
+    background-position: -70px -350px;
+  }
+  .ranking li:nth-child(18) .chef {
+    background-position: -140px -350px;
+  }
+  .ranking li:nth-child(19) .chef {
+    background-position: 0 -420px;
+  }
+  .ranking li:nth-child(20) .chef {
+    background-position: -70px -420px;
+  }
+}
 @media screen and (min-width: 701px) {
   .ranking li {
     padding-left: 60px;
   }
   .ranking li .chef {
     left: -30px;
-  }
-}
-@media screen and (max-width: 700px) {
-  .ranking li {
-    padding-left: 75px;
-  }
-  .ranking li .chef {
-    left: -15px;
   }
 }
 footer {
@@ -749,8 +879,17 @@ footer p {
 .center {
   text-align: center;
 }
+.left {
+  text-align: left;
+}
+.bg-dark {
+  background: rgba(0,0,0,0.1);
+}
+.bg-light {
+  background: rgba(255,255,255,0.1);
+}
 .season {
-  background: linear-gradient(170deg, #008b8b 0, #c71585 50%, #4682b4 100%);
+  background: linear-gradient(175deg, #008b8b 0, #c71585 100%);
   padding: 20px;
 }
 .season.home {

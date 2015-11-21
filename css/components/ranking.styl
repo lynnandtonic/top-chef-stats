@@ -5,6 +5,7 @@
     width: 100%
     margin: 0 0 15px
     padding: 25px 0
+    padding-left: 60px
     position: relative
     background-image: linear-gradient(to right, black(0) 20px, black(.2) 20px)
     border-radius: 0 3px 3px 0
@@ -142,7 +143,62 @@
         background: darkorchid
         color: white
 
-@media screen and (min-width: 701px)
+@media screen and (max-width: $bp-small)
+
+  .ranking
+
+    li
+      padding: 15px 0
+      padding-left: 55px
+
+      .chef
+        left: -15px
+        width: 70px
+        height: @width
+        background-size: 210px auto
+
+      &:nth-child(1) .chef
+        background-position: 0 0
+      &:nth-child(2) .chef
+        background-position: -70px 0
+      &:nth-child(3) .chef
+        background-position: -140px 0
+      &:nth-child(4) .chef
+        background-position: 0 -70px
+      &:nth-child(5) .chef
+        background-position: -70px -70px
+      &:nth-child(6) .chef
+        background-position: -140px -70px
+      &:nth-child(7) .chef
+        background-position: 0 -140px
+      &:nth-child(8) .chef
+        background-position: -70px -140px
+      &:nth-child(9) .chef
+        background-position: -140px -140px
+      &:nth-child(10) .chef
+        background-position: 0 -210px
+      &:nth-child(11) .chef
+        background-position: -70px -210px
+      &:nth-child(12) .chef
+        background-position: -140px -210px
+      &:nth-child(13) .chef
+        background-position: 0 -280px
+      &:nth-child(14) .chef
+        background-position: -70px -280px
+      &:nth-child(15) .chef
+        background-position: -140px -280px
+      &:nth-child(16) .chef
+        background-position: 0 -350px
+      &:nth-child(17) .chef
+        background-position: -70px -350px
+      &:nth-child(18) .chef
+        background-position: -140px -350px
+      &:nth-child(19) .chef
+        background-position: 0 -420px
+      &:nth-child(20) .chef
+        background-position: -70px -420px
+
+@media screen and (min-width: $bp-small + 1)
 
   .ranking
 
@@ -151,14 +207,4 @@
 
       .chef
         left: -30px
-
-@media screen and (max-width: 700px)
-
-  .ranking
-
-    li
-      padding-left: 75px
-
-      .chef
-        left: -15px
 

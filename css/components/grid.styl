@@ -1,4 +1,9 @@
-@media screen and (min-width: 701px)
+@media screen and (max-width: $bp-small)
+
+  .grid
+    padding-bottom: 40px
+
+@media screen and (min-width: $bp-small + 1)
 
   .grid-item
     margin: 0 0 30px
@@ -11,7 +16,10 @@
   .grid-sm-2
     width: 50%
 
-@media screen and (min-width: 1001px)
+  .grid-sm-3
+    width: 33.33%
+
+@media screen and (min-width: $bp-large + 1)
 
   .grid-item
     margin: 0 0 50px
