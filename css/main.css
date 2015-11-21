@@ -139,6 +139,7 @@ body {
   font-size: 18px;
   line-height: 1.4;
   color: white;
+  background: #333;
 }
 ::-moz-selection {
   background-color: #ba55d3;
@@ -895,7 +896,8 @@ footer p {
 .season.home {
   background: linear-gradient(170deg, #4682b4 0, #008b8b 50%, #c71585 100%);
 }
-.season.glossary {
+.season.glossary,
+.season.four-oh-four {
   background: linear-gradient(170deg, #4682b4 0, #008b8b 50%);
 }
 .season-01 .ranking li .chef {
