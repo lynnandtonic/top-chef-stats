@@ -147,8 +147,14 @@
 
   &.current
 
-    li:nth-child(-n+3)
+    li:nth-child(-n+2)
       display: none
+
+// two contestants tie for 3rd
+.season-13 .ranking li
+  &:nth-child(4) span:after
+        content: '3rd'
+
 
 @media screen and (max-width: $bp-small)
 
