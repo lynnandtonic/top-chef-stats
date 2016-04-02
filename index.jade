@@ -5,12 +5,14 @@ block content
   .season.home
 
     .intro.center
+      img.knife(src='/images/knife.png')
       h1 Top Chef Stats
       h2 Compiled stats and facts across 13 seasons.
       p Explore the entire series or select a specific season.
 
     .grid
 
+      //- Season Overview
       .stat.grid-item.grid-sm-2.grid-lg-3
         h2 Total Seasons
         .number 13
@@ -21,30 +23,27 @@ block content
         h2 Total Judges
         .number 10
 
-
+      //- Chefs
       .stat.grid-item.grid-sm-2
         h2 Total Chefs
         .number 191
-      .stat.grid-item.grid-sm-2
+      .stat.grid-item.grid-sm-1.grid-lg-2
         h2 Gender Breakdown
         .number
           span.icon.man 103
           span.icon.woman 88
 
-      .stat.grid-item.grid-sm-2.grid-lg-3
+      //- Guest Judges
+      .stat.grid-item.grid-sm-2
         h2 Total Guest Judges
         .number 166
-      .stat.person.grid-item.grid-sm-2.grid-lg-3
+      .stat.person.grid-item.grid-sm-2
         h2 Most Frequent Guest Judge
         .number 9
           .name Eric Ripert
             img.avatar(src='/images/eric-ripert.png')
-      .stat.person.grid-item.grid-sm-2.grid-lg-3
-        h2 Most Frequent Finale Diner
-        .number 5
-          .name Hubert Keller
-            img.avatar(src='/images/hubert-keller.png')
 
+      //- Locations
       .stat.grid-item.grid-sm-1.grid-lg-2
         img(src='/images/world-map.svg')
       .grid-item.grid-sm-1.grid-lg-2.p0.m0
@@ -61,6 +60,7 @@ block content
           h2 Chefs from New York
           .number 34
 
+      //- Chef Ages
       .stat.grid-item.grid-sm-2.grid-lg-3
         h2 Average Chef Age
         .number 32
@@ -75,6 +75,7 @@ block content
           .name John Tesar
             img.avatar(src='/images/john-tesar.png')
 
+      //- Not Here to Make Friends
       .featured.cf
         h2 Chefs Who Are 
         .phrase “Not here to make friends.”
@@ -85,12 +86,13 @@ block content
           img.avatar(src='/images/robin-leventhal.png')
           img.avatar(src='/images/carlos-gaytan.png')
 
+      //- Challenge Breakdown
       .stat.grid-item.grid-sm-2.grid-lg-3
         h2 Average Quickfire Time (min)
         .number 44
       .stat.grid-item.grid-sm-2.grid-lg-3
         h2 Challenges with a Knife Pull
-        .number 74
+        .number 75
       .stat.grid-item.grid-sm-2.grid-lg-3
         h2 Challenges Cooking for Kids
         .number 12
@@ -120,12 +122,13 @@ block content
       .stat.grid-item.grid-sm-2.grid-lg-3
         h2 Challenges Won with Immunity
         .number 13
-      .stat.person.grid-item.grid-sm-2.grid-lg-3
+      .stat.person.grid-item.grid-sm-1.grid-lg-3
         h2 Best Last Chance Kitchen Streak
         .number 8
           .name Louis Maldonado
             img.avatar(src='/images/louis-maldonado.png')
 
+      //- This Is Top Chef
       .featured.phrase-list.cf
         .phrase “This is Top Chef, Not _________.”
         .grid-item.grid-sm-2.left
@@ -161,26 +164,51 @@ block content
           p A Butt-Rubbing Contest
             span S 05
 
-      .stat.person.grid-item.grid-sm-2.grid-lg-3
-        h2 Top Chef Voted Fan Fave
-        .number 1
-          .name Stephanie Izard
-            img.avatar(src='/images/stephanie-izard.png')
-      .stat.person.grid-item.grid-sm-2.grid-lg-3
-        h2 Chef Turned Judge
-        .number 1
-          .name Richard Blais
-            img.avatar(src='/images/richard-blais-s8.png')
-      .stat.person.grid-item.grid-sm-2.grid-lg-3
-        h2 Also Competed on Masters
-        .number 1
-          .name Bryan Voltaggio
-            img.avatar(src='/images/bryan-voltaggio.png')
+      //- Restaurant Wars
+      .themed.cf
+        h1
+          span Restaurant Wars
+        .stat.grid-item.grid-sm-1.grid-lg-3
+          h2 Total Restaurants
+          .number 26
+        .stat.grid-item.grid-sm-2.grid-lg-3
+          h2 Menus without Dessert
+          .number 2
+        .stat.grid-item.grid-sm-2.grid-lg-3
+          h2 Didn’t Shop for Decor
+          .number 3
+        .grid-item.grid-sm-2
+          .chart
+            h2 Eliminated Roles
+            .chart-rw-roles
+              span
+              span
+              span
+              span
+              span
+              .chart-bar.bar-5 Executive Chef
+                .number 5
+              .chart-bar.bar-5 Front of House
+                .number 5
+              .chart-bar.bar-3 Line Cook
+                .number 3
+        .grid-item.grid-sm-2
+          .chart
+            h2 Winning Roles
+            .chart-rw-roles
+              span
+              span
+              span
+              span
+              span
+              .chart-bar.bar-5 Executive Chef
+                .number 5
+              .chart-bar.bar-2 Front of House
+                .number 2
+              .chart-bar.bar-5 Line Cook
+                .number 5
 
-      //- .stat.grid-item.grid-sm-2.grid-lg-3
-      //-   h2 Chefs Who Return for Another Season
-      //-   .number 21
-
+      //- A Force to Be Reckoned With
       .featured.cf
         h2 Chefs Described As
         .phrase “A force to be reckoned with.”
@@ -203,9 +231,127 @@ block content
           img.avatar(src='/images/jeremy-ford.png')
           img.avatar(src='/images/isaac-toups.png')
 
+      //- Quickfires
+      .themed.cf
+        h1
+          span Quickfires
+        .stat.grid-item.grid-sm-2
+          h2 Total Quickfire Challenges
+          .number 169
+        .stat.grid-item.grid-sm-2
+          h2 Total Quickfire Cash Won
+          .number $375k
+
+        .stat.grid-item.grid-sm-1
+          h2 % of Quickfires That Awarded Prizes
+          .grid.percentages
+            .percentage.grid-item.grid-xs-2.grid-sm-3.grid-lg-5
+              .number.percentage-50
+                span 53%
+              h3 Immunity
+            .percentage.grid-item.grid-xs-2.grid-sm-3.grid-lg-5
+              .number.percentage-20
+                span 20%
+              h3 Cash
+            .percentage.grid-item.grid-xs-2.grid-sm-3.grid-lg-5
+              .number.percentage-5
+                span 3%
+              h3 Skip Challenge
+            .percentage.grid-item.grid-xs-2.grid-sm-3.grid-lg-5
+              .number.percentage-10
+                span 8%
+              h3 Choose Ingredients
+            .percentage.grid-item.grid-xs-2.grid-sm-3.grid-lg-5
+              .number.percentage-10
+                span 8%
+              h3 Choose Teammates
+
+        .stat.grid-item.grid-sm-2.grid-lg-3
+          h2 Mise en Place Quickfires
+          .number 12
+        .stat.grid-item.grid-sm-2.grid-lg-3
+          h2 Pairing Quickfires
+          .number 7
+        .stat.grid-item.grid-sm-2.grid-lg-3
+          h2 Blindfolded Quickfires
+          .number 6
+
+      //- Winners Who Won the First Challenge
+      .featured.cf
+        h2 Top Chef Winners Who Won Their Season’s 
+        .phrase First Elimination Challenge 
+        .roster
+          img.avatar(src='/images/harold-dieterle.png')
+          img.avatar(src='/images/ilan-hall.png')
+          img.avatar(src='/images/stephanie-izard.png')
+          img.avatar(src='/images/paul-qui.png')
+          img.avatar(src='/images/mei-lin.png')
+          img.avatar(src='/images/jeremy-ford.png')
+
+      //- Season Finales
+      .themed.cf
+        h1
+          span Season Finales
+        .stat.grid-item.grid-sm-2.grid-lg-3
+          h2 Chefs Competed
+          .number 31
+        .stat.grid-item.grid-sm-2.grid-lg-3
+          h2 Total Courses
+          .number 131
+        .stat.person.grid-item.grid-sm-2.grid-lg-3
+          h2 Most Frequent Finale Diner
+          .number 5
+            .name Hubert Keller
+              img.avatar(src='/images/hubert-keller.png')
+        .stat.person.grid-item.grid-sm-2
+          h2 Winners Who Skipped Dessert
+          .number 2
+            .roster
+              img.avatar(src='/images/kristen-kish.png')
+              img.avatar(src='/images/hosea-rosenberg.png')
+        .stat.person.grid-item.grid-sm-1.grid-lg-2
+          h2 Runners-Up Who Skipped Dessert
+          .number 4
+            .roster
+              img.avatar(src='/images/gregory-gourdet.png')
+              img.avatar(src='/images/brooke-williamson.png')
+              img.avatar(src='/images/dale-levitski-s3.png')
+              img.avatar(src='/images/casey-thompson-s3.png')
+        .stat.grid-item.grid-sm-2
+          h2 Winners Who Made Risotto
+          .number 0
+        .stat.person.grid-item.grid-sm-2
+          h2 Runners-Up Who Made Risotto
+          .number 2
+            .roster
+              img.avatar(src='/images/amar-santana.png')
+              img.avatar(src='/images/tiffani-faison-s1.png')
+
+      //- Top Chef Facts
+      .stat.person.grid-item.grid-sm-2.grid-lg-3
+        h2 Top Chef Voted Fan Fave
+        .number 1
+          .name Stephanie Izard
+            img.avatar(src='/images/stephanie-izard.png')
+      .stat.person.grid-item.grid-sm-2.grid-lg-3
+        h2 Chef Turned Judge
+        .number 1
+          .name Richard Blais
+            img.avatar(src='/images/richard-blais-s8.png')
+      .stat.person.grid-item.grid-sm-2.grid-lg-3
+        h2 Also Competed on Masters
+        .number 1
+          .name Bryan Voltaggio
+            img.avatar(src='/images/bryan-voltaggio.png')
+
+      //- .stat.grid-item.grid-sm-2.grid-lg-3
+      //-   h2 Chefs Who Return for Another Season
+      //-   .number 21
+
+      //- Prizes
       .featured
         h2 Total Cash Money Given Away
-        .number $2,095,000
+        .number $2,220,000
 
       .stat.person.grid-item.grid-sm-1.grid-lg-2
         h2 Most Cash Won by a Top Chef
@@ -231,6 +377,7 @@ block content
         h2 Knives Won
         .number 22
 
+      //- Ingredients: Winners
       .featured
         h2 Challenges Won with a Dessert
         .number 33
@@ -248,6 +395,7 @@ block content
         h2 Won with Sandwiches
         .number 11
 
+      //- Ingredients: Eliminated
       .featured
         h2 Chefs Eliminated for a Dessert
         .number 11
@@ -265,6 +413,7 @@ block content
         h2 Eliminated for Burgers
         .number 6
 
+      //- Show Facts
       .stat.grid-item.grid-sm-2.grid-lg-3
         h2 Total Emmy Nominations
         .number 24

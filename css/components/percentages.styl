@@ -1,0 +1,47 @@
+percentage-bg(percentage)
+  linear-gradient(to right, white(.15) percentage, white(0) percentage)
+
+.percentages
+  margin-top: 40px
+
+.percentage
+  text-align: center
+
+  h3
+    font-size: 15px
+
+  .number
+    width: 100px
+    height: @width
+    margin: 0 auto 20px
+    position: relative
+    border-radius: 50%
+    border: 3px solid white
+    box-shadow: 0 0 0 4px white(.1)
+
+    span
+      font-size: 30px
+      {centerContent}
+      margin-left: 4px
+
+  .percentage-5
+    background: percentage-bg(5%)
+  .percentage-10 
+    background: percentage-bg(10%)
+  .percentage-20 
+    background: percentage-bg(20%)
+  .percentage-30 
+    background: percentage-bg(30%)
+  .percentage-40 
+    background: percentage-bg(40%)
+  .percentage-50 
+    background: percentage-bg(50%)
+  .percentage-60 
+    background: percentage-bg(60%)
+  .percentage-70 
+    background: percentage-bg(70%)
+
+@media screen and (max-width: $bp-small)
+
+  .percentages .percentage
+    margin-top: 30px

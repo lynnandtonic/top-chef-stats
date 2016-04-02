@@ -1,0 +1,64 @@
+.chart
+
+  h2
+    border-bottom: $ui-border
+
+$line-width = (100/5)%
+$chart-border = 1px dotted white(.2)
+
+bar-background(percentage)
+  linear-gradient(to right, black(.15) percentage, black(0) percentage)
+
+.chart-rw-roles
+  margin: 20px 0 15px
+  padding: 2px 0
+  position: relative
+
+  span
+    width: $line-width
+    height: 100%
+    position: absolute
+    top: 0
+    border-left: $chart-border
+
+    &:nth-of-type(2)
+      left: $line-width
+    &:nth-of-type(3)
+      left: $line-width*2
+    &:nth-of-type(4)
+      left: $line-width*3
+    &:nth-of-type(5)
+      left: $line-width*4
+    &:nth-of-type(6)
+      left: $line-width*5
+    &:last-of-type
+      border-right: $chart-border
+
+  .chart-bar
+    margin: 10px 0
+    padding: 6px 8px
+    position: relative
+    text-transform: uppercase
+    font-size: 13px
+    font-weight: bold
+
+    .number
+      position: absolute
+      right: 10px
+      top: 0
+      font-size: 20px
+
+    &.bar-1
+      background-image: bar-background($line-width)
+    &.bar-2
+      background-image: bar-background($line-width*2)
+    &.bar-3
+      background-image: bar-background($line-width*3)
+    &.bar-4
+      background-image: bar-background($line-width*4)
+    &.bar-5
+      background-image: bar-background($line-width*5)
+
+@media screen and (max-width: $bp-small)
+  .chart
+    margin-top: 20px
