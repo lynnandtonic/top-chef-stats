@@ -4,23 +4,31 @@
   background: #333
 
   a, label
+    height: 100%
     color: white
 
   .nav-home
     margin: 10px 20px
     float: left
 
+  .nav-links
+    float: right
+
+    label, & > a
+      height: 100%
+      padding: 10px 20px
+      display: block
+      float: left
+      background: white(.15)
+      border-left: 1px solid white(.3)
+
+      &:hover
+        background: white(.2)
+
   input.menu-toggle
     visibility: hidden
     position: absolute
     left: -100%
-
-  label
-    padding: 10px 20px
-    float: right
-    background: purple
-    border-left: 1px solid white(.2)
-    cursor: pointer
 
   .nav-seasons
     display: none
@@ -78,6 +86,20 @@ $nav-border = 1px solid white(.3)
     &:nth-child(8),
     &:nth-child(12)
       border-right: none
+
+@media screen and (max-width: 500px)
+
+  .nav-main
+    font-size: 14px
+    line-height: 25px
+
+    .nav-home
+      margin: 10px
+
+    .nav-links
+
+      label, & > a
+        padding: 10px 15px
 
 @media screen and (min-width: 401px) and (max-width: 650px)
 

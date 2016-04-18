@@ -1,0 +1,251 @@
+extends ../layout
+
+block title
+  | | Masters
+
+block content
+
+  .season.masters
+
+    .intro.center
+      img.knife(src='/images/knife.png')
+      img.knife(src='/images/knife.png')
+      img.knife(src='/images/knife.png')
+      h1 Top Chef Masters
+      h2 A culinary clash of the titans.
+
+    .grid
+
+      //- Season Overview
+      .stat.grid-item.grid-sm-2.grid-lg-3
+        h2 Total Seasons
+        .number 5
+      .stat.grid-item.grid-sm-2.grid-lg-3
+        h2 Total Hosts
+        .number 2
+          .roster
+            img.avatar(src='/images/curtis-stone.png')
+            img.avatar(src='/images/kelly-choi.png')
+      .stat.grid-item.grid-sm-2.grid-lg-3
+        h2 Total Cities
+        .number 2
+
+      //- Chefs
+      .stat.grid-item.grid-sm-2.grid-lg-2
+        h2 Total Chefs
+        .number 72
+      .stat.grid-item.grid-sm-1.grid-lg-2
+        h2 Gender Breakdown
+        .number
+          span.icon.man 49
+          span.icon.woman 23
+
+      //- Winners
+      .featured.cf
+        h2 Top Chef Masters
+        .phrase Season Winners
+        .roster
+          img.avatar(src='/images/rick-bayless.png')
+          img.avatar(src='/images/marcus-samuelsson.png')
+          img.avatar(src='/images/floyd-cardoz.png')
+          img.avatar(src='/images/chris-cosentino.png')
+          img.avatar(src='/images/douglas-keane.png')
+
+      .stat.grid-item.grid-sm-2.grid-lg-3
+        h2 Chefs from New York
+        .number 15
+      .stat.grid-item.grid-sm-2.grid-lg-3
+        h2 Chefs from California
+        .number 14
+      .stat.grid-item.grid-sm-2.grid-lg-3
+        h2 Charities Represented
+        .number 66
+
+      .featured
+        h2 Total Money Won for Charity
+        .number $1,156,800
+
+      //- Cash
+      .stat.person.grid-item.grid-sm-1.grid-lg-2
+        h2 Most Cash Won by a Top Chef Master
+        .number $141k
+          .name Chris Cosentino
+            img.avatar(src='/images/chris-cosentino.png')
+      .stat.person.grid-item.grid-sm-1.grid-lg-2
+        h2 Most Cash Won by a Non-Winner
+        .number $40k
+          .name Mary Sue Milliken
+            img.avatar(src='/images/mary-sue-milliken.png')
+
+      .featured.phrase-list.large.cf
+        h2.mb2 Most Represented Charities
+        .grid-item.grid-sm-2.left
+          p Autism Speaks
+            span 3
+          p Share Our Strength
+            span 3
+          p American Heart Association
+            span 2
+        .grid-item.grid-sm-2.left
+          p Charity: Water
+            span 2
+          p Clinic Ole
+            span 2
+          p Doctors Without Borders
+            span 2
+        h2.clear.mb2.pt Charities That Won the Most Money
+        .grid-item.grid-sm-2.left
+          p Michael J. Fox Foundation
+            span $141k
+          p Green Dog Rescue
+            span $120k
+          p UNICEF Tap Project
+            span $115k
+        .grid-item.grid-sm-2.left
+          p Frontera Farmer Foundation
+            span $110k
+          p Young Scientist Cancer Research Fund
+            span $110k
+          p Share Our Strength
+            span $65k
+
+      //- Challenge Breakdown
+      .stat.grid-item.grid-sm-2.grid-lg-3
+        h2 Average Quickfire Time (min)
+        .number 31
+      .stat.grid-item.grid-sm-2.grid-lg-3
+        h2 Challenges with a Knife Pull
+        .number 17
+      .stat.grid-item.grid-sm-2.grid-lg-3
+        h2 Challenges Cooking for Kids
+        .number 2
+
+      .stat.grid-item.grid-sm-2.grid-lg-3
+        h2 Team Challenges
+        .number 19
+      .stat.grid-item.grid-sm-2.grid-lg-3
+        h2 Classic Top Chef Challenges
+        .number 25
+      .stat.grid-item.grid-sm-2.grid-lg-3
+        h2 Battle of the Sous Chefs Challenges
+        .number 10
+
+      .stat.person.grid-item.grid-sm-2.grid-lg-3
+        h2 Most Quickfire Wins
+        .number 4
+          .name Traci Des Jardins
+            img.avatar(src='/images/traci-des-jardins.png')
+      .stat.person.grid-item.grid-sm-2.grid-lg-3
+        h2 Most Elimination Wins
+        .number 4
+          .roster
+            img.avatar(src='/images/mary-sue-milliken.png')
+            img.avatar(src='/images/chris-cosentino.png')
+      .stat.person.grid-item.grid-sm-2.grid-lg-3
+        h2 Most Overall Wins
+        .number 6
+          .name Chris Cosentino
+            img.avatar(src='/images/chris-cosentino.png')
+
+      //- Repeat chefs
+      .featured.cf
+        h2 Chefs Who Compete in 
+        .phrase Multiple Seasons
+        .roster
+          img.avatar(src='/images/art-smith.png')
+          img.avatar(src='/images/david-burke.png')
+          img.avatar(src='/images/debbie-gold.png')
+          img.avatar(src='/images/graham-elliot-bowles.png')
+          img.avatar(src='/images/jonathan-waxman.png')
+          img.avatar(src='/images/ludo-lefebvre.png')
+          img.avatar(src='/images/mark-peel.png')
+          img.avatar(src='/images/rick-moonen.png')
+          img.avatar(src='/images/sue-zemanick.png')
+          img.avatar(src='/images/thierry-rautureau.png')
+          img.avatar(src='/images/wylie-dufresne.png')
+
+      .stat.grid-item.grid-sm-2.grid-lg-3
+        h2 Mise en Place Quickfires
+        .number 4
+      .stat.grid-item.grid-sm-2.grid-lg-3
+        h2 Taste Test Quickfires
+        .number 3
+      .stat.grid-item.grid-sm-2.grid-lg-3
+        h2 Pairing Quickfires
+        .number 2
+      .stat.grid-item.grid-sm-2.grid-lg-3
+        h2 Weddings Catered
+        .number 2
+      .stat.grid-item.grid-sm-2.grid-lg-3
+        h2 Rock Bands Cooked For
+        .number 4
+      .stat.grid-item.grid-sm-2.grid-lg-3
+        h2 TV Show Casts Cooked For
+        .number 9
+
+      .featured.phrase-list.large.cf
+        h2 By Number of Challenges
+        .phrase Most Frequent Critics
+        .grid-item.grid-sm-2.left
+          p James Oseland
+            span 46
+          p Gail Simmons
+            span 24
+          p Gael Greene
+            span 20
+          p Ruth Reichl
+            span 18
+          p Jay Rayner
+            span 17
+          p Francis Lam
+            span 12
+        .grid-item.grid-sm-2.left
+          p Danyelle Freeman
+            span 8
+          p Alan Sytsma
+            span 6
+          p Krista Simmons
+            span 5
+          p Tom Colicchio
+            span 4
+          p Lesley Suter
+            span 4
+          p Jane Goldman
+            span 4
+
+
+      .stat.grid-item.grid-sm-2.grid-lg-3
+        h2 Skydiving Challenges
+        .number 1
+      .stat.grid-item.grid-sm-2.grid-lg-3
+        h2 Challenges Won with Immunity
+        .number 6
+      .stat.person.grid-item.grid-sm-2.grid-lg-3
+        h2 Eliminated for Risotto
+        .number 2
+          .roster
+            img.avatar(src='/images/john-currence.png')
+            img.avatar(src='/images/christopher-lee.png')
+
+      //- Cameos
+      .featured.cf
+        h2 Appearances from 
+        .phrase Top Chef Alumni
+        .roster
+          img.avatar(src='/images/ilan-hall.png')
+          img.avatar(src='/images/harold-dieterle.png')
+          img.avatar(src='/images/hung-huynh.png')
+          img.avatar(src='/images/stephanie-izard.png')
+          img.avatar(src='/images/hosea-rosenberg.png')
+          img.avatar(src='/images/spike-mendelsohn-s8.png')
+          img.avatar(src='/images/richard-blais-s8.png')
+          img.avatar(src='/images/jamie-lauren-s5.png')
+          img.avatar(src='/images/brian-malarky.png')
+          img.avatar(src='/images/cj-jacobsen-s10.png')
+          img.avatar(src='/images/elia-aboumrad-s2.png')
+          img.avatar(src='/images/alex-eusebio.png')
+          img.avatar(src='/images/fabio-viviani-s8.png')
+          img.avatar(src='/images/dale-talde-s8.png')
+          img.avatar(src='/images/antonia-lofaso-s8.png')
+          img.avatar(src='/images/betty-fraser.png')
+          img.avatar(src='/images/michael-midgley.png')
