@@ -1,29 +1,26 @@
+$nav-height-tall = 80px
+$nav-height-short = 45px
+
 .nav-main
-  height: 45px
   position: relative
   background: #333
 
+  .nav-home
+    display: block
+
   a, label
-    height: 100%
     color: white
 
-  .nav-home
-    margin: 10px 20px
-    float: left
-
   .nav-links
-    float: right
 
     label:hover
       cursor: pointer
 
     label, & > a
-      height: 100%
-      padding: 10px 20px
       display: block
       float: left
       background: white(.15)
-      border-left: 1px solid white(.3)
+      border-left: 1px solid white(.2)
 
       &:hover
         background: white(.2)
@@ -36,7 +33,6 @@
   .nav-seasons
     display: none
     position: absolute
-    top: 45px
     left: 0
     z-index: 100
 
@@ -46,91 +42,47 @@
   .nav-seasons
     background-image: linear-gradient(to right, steelblue, mediumvioletred)
 
-$nav-border = 1px solid white(.3)
-
-.nav-seasons
-  width: 100%
-  background-image: linear-gradient(to right, steelblue, darkcyan)
-  border-top: $nav-border
-  border-bottom: $nav-border
-  box-shadow: 0 3px 3px black(.2)
-
-  li
-    float: left
-    border-right: $nav-border
-
-    a
-      padding: 10px
-      display: block
-      color: white
-
-      &:hover
-        background: black(.1)
-
-    span
-      display: block
-
-    span:first-of-type
-      font-size: 24px
-      font-weight: bold
-
-    span:nth-of-type(2)
-      font-size: 15px
-
-@media screen and (max-width: 400px)
-
-  .nav-seasons li
-    width: 25%
-
-    &:nth-child(-n+12)
-      border-bottom: $nav-border
-
-    &:nth-child(4),
-    &:nth-child(8),
-    &:nth-child(12)
-      border-right: none
-
-@media screen and (max-width: 500px)
+@media screen and (max-width: 600px)
 
   .nav-main
-    font-size: 14px
-    line-height: 25px
+    height: $nav-height-tall
+    font-size: 15px
+    text-align: center
 
     .nav-home
-      margin: 10px
+      height: 40px
+      padding: 10px
 
     .nav-links
 
       label, & > a
-        padding: 10px 15px
+        height: 40px
+        padding: 10px
 
-@media screen and (min-width: 401px) and (max-width: 650px)
+      label
+        width: 38%
 
-  .nav-seasons li
-    width: 20%
+      & > a
+        width: 31%
 
-    &:nth-child(-n+10)
-      border-bottom: $nav-border
+  .nav-seasons
+    top: $nav-height-tall
 
-    &:nth-child(5),
-    &:nth-child(10)
-      border-right: none
+@media screen and (min-width: 601px)
 
-@media screen and (min-width: 651px) and (max-width: 1030px)
+  .nav-main
+    height: $nav-height-short
 
-  .nav-seasons li
-    width: 14.28%
+    .nav-home
+      padding: 10px 20px
+      float: left
 
-    &:nth-child(-n+7)
-      border-bottom: $nav-border
+    .nav-links
+      float: right
 
-    &:nth-child(7)
-      border-right: none
+      label, & > a
+        height: 100%
+        padding: 10px 20px
 
-@media screen and (min-width: 1031px)
-
-  .nav-seasons li
-    width: 7.69%
-
-    &:last-child
-      border-right: none
+  .nav-seasons
+    top: $nav-height-short

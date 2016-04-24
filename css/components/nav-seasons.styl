@@ -1,0 +1,74 @@
+$nav-border = 1px solid white(.3)
+
+.nav-seasons
+  width: 100%
+  background-image: linear-gradient(to right, steelblue, darkcyan)
+  border-top: $nav-border
+  border-bottom: $nav-border
+  box-shadow: 0 3px 3px black(.2)
+
+  li
+    float: left
+    border-right: $nav-border
+
+    a
+      padding: 10px
+      display: block
+      color: white
+
+      &:hover
+        background: black(.1)
+
+    span
+      display: block
+
+    span:first-of-type
+      font-size: 24px
+      font-weight: bold
+
+    span:nth-of-type(2)
+      font-size: 15px
+
+@media screen and (max-width: 400px)
+
+  .nav-seasons li
+    width: 25%
+
+    &:nth-child(-n+12)
+      border-bottom: $nav-border
+
+    &:nth-child(4),
+    &:nth-child(8),
+    &:nth-child(12)
+      border-right: none
+
+@media screen and (min-width: 401px) and (max-width: 650px)
+
+  .nav-seasons li
+    width: 20%
+
+    &:nth-child(-n+10)
+      border-bottom: $nav-border
+
+    &:nth-child(5),
+    &:nth-child(10)
+      border-right: none
+
+@media screen and (min-width: 651px) and (max-width: 1030px)
+
+  .nav-seasons li
+    width: 14.28%
+
+    &:nth-child(-n+7)
+      border-bottom: $nav-border
+
+    &:nth-child(7)
+      border-right: none
+
+@media screen and (min-width: 1031px)
+
+  .nav-seasons li
+    width: 7.69%
+
+    &:last-child
+      border-right: none
