@@ -42,7 +42,8 @@ $nav-height-short = 45px
   .nav-seasons
     background-image: linear-gradient(to right, steelblue, mediumvioletred)
 
-@media screen and (max-width: 600px)
+
+@media screen and (max-width: 650px)
 
   .nav-main
     height: $nav-height-tall
@@ -60,16 +61,20 @@ $nav-height-short = 45px
         padding: 10px
         text-align: center
 
-      label
-        width: 38%
-
-      & > a
-        width: 31%
+      label, & > a:not(.wide)
+        width: 22.66%
+      & > a.wide
+        width: 32%
 
   .nav-seasons
     top: $nav-height-tall
 
-@media screen and (min-width: 601px)
+@media screen and (max-width: 400px)
+
+  .nav-main
+    font-size: 13px
+
+@media screen and (min-width: 651px)
 
   .nav-main
     height: $nav-height-short
