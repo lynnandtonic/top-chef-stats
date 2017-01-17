@@ -884,8 +884,8 @@ h2 + .roster {
     min-height: 190px;
   }
 }
-@media screen and (max-width: 450px) {
-  .season-13 .stat.roster-lg {
+@media screen and (max-width: 449px) {
+  .stat.roster-xl {
     min-height: 190px;
   }
 }
@@ -1090,7 +1090,7 @@ h2 + .roster {
   background: #9932cc;
   color: white;
 }
-.ranking.current li:nth-child(-n+10) {
+.ranking.current li:nth-child(-n+8) {
   display: none;
 }
 .season-13 .ranking li:nth-child(4) span:after {
