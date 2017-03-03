@@ -1090,9 +1090,6 @@ h2 + .roster {
   background: #9932cc;
   color: white;
 }
-.ranking.current li:nth-child(-n+3) {
-  display: none;
-}
 .season-13 .ranking li:nth-child(4) span:after {
   content: '3rd';
 }
