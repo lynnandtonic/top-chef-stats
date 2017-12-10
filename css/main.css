@@ -347,20 +347,23 @@ hr {
 }
 @media screen and (min-width: 651px) and (max-width: 1200px) {
   .nav-seasons li {
-    width: 14.28%;
+    width: 16.66%;
   }
-  .nav-seasons li:nth-child(-n+7) {
+  .nav-seasons li:nth-child(-n+12) {
     border-bottom: 1px solid rgba(255,255,255,0.3);
   }
-  .nav-seasons li:nth-child(7) {
+  .nav-seasons li:nth-child(6n) {
     border-right: none;
   }
 }
 @media screen and (min-width: 1201px) {
   .nav-seasons li {
-    width: 7.14%;
+    width: 12.5%;
   }
-  .nav-seasons li:last-child {
+  .nav-seasons li:nth-child(-n+8) {
+    border-bottom: 1px solid rgba(255,255,255,0.3);
+  }
+  .nav-seasons li:nth-child(8) {
     border-right: none;
   }
 }
@@ -1090,6 +1093,9 @@ h2 + .roster {
   background: #9932cc;
   color: white;
 }
+.ranking.current li:nth-child(-n+14) {
+  display: none;
+}
 .season-13 .ranking li:nth-child(4) span:after {
   content: '3rd';
 }
@@ -1269,6 +1275,9 @@ footer p {
 }
 .season-14 .ranking li .chef {
   background-image: url("/images/season-14.png");
+}
+.season-15 .ranking li .chef {
+  background-image: url("/images/season-15.png");
 }
 .duel-chef {
   position: relative;
