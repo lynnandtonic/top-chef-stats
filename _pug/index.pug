@@ -1,0 +1,515 @@
+extends _layout
+
+block content
+
+  .season.home
+
+    .intro.center
+      img.knife(src='/images/knife.png')
+      h1 Top Chef Stats
+      h2 Compiled stats and facts across 15 seasons.
+      //- p Explore the entire series or select a specific season.
+      p Also check out stats from 
+        a(href='/masters') Top Chef Masters
+        = ', '
+        a(href='/just-desserts') Just Desserts
+        = ' and '
+        a(href='/duels') Top Chef Duels
+        | !
+
+    .grid
+
+      //- Season Overview
+      .stat.grid-item.grid-sm-2.grid-lg-3
+        h2 Total Seasons
+        .number 15
+      .stat.person.grid-item.grid-sm-2.grid-lg-3
+        h2 Total Hosts
+        .number 2
+          .roster
+            img.avatar(src='/images/padma-lakshmi.png')
+            img.avatar(src='/images/katie-lee.png')
+
+      .stat.grid-item.grid-sm-2.grid-lg-3
+        h2 Total Judges
+        .number 11
+
+      //- Chefs
+      .stat.grid-item.grid-sm-2
+        h2 Total Chefs
+        .number 214
+      .stat.grid-item.grid-sm-1.grid-lg-2
+        h2 Gender Breakdown
+        .number
+          span.icon.man 116
+          span.icon.woman 98
+
+      //- Guest Judges
+      .stat.grid-item.grid-sm-2
+        h2 Total Guest Judges
+        .number 187
+      .stat.person.grid-item.grid-sm-2
+        h2 Most Frequent Guest Judge
+        .number 9
+          .name Eric Ripert
+            img.avatar(src='/images/eric-ripert.png')
+
+      //- Locations
+      .stat.grid-item.grid-sm-1.grid-lg-2
+        img(src='/images/world-map.svg')
+      .grid-item.grid-sm-1.grid-lg-2.p0.m0
+        .stat.grid-item.grid-sm-2
+          h2 Total Cities
+          .number 32
+        .stat.grid-item.grid-sm-2
+          h2 Total Countries
+          .number 5
+        .stat.grid-item.grid-sm-2
+          h2 Chefs from California
+          .number 56
+        .stat.grid-item.grid-sm-2
+          h2 Chefs from New York
+          .number 38
+
+      //- Chef Ages
+      .stat.grid-item.grid-sm-2.grid-lg-3
+        h2 Average Chef Age
+        .number 33
+      .stat.person.grid-item.grid-sm-2.grid-lg-3
+        h2 Youngest Chef
+        .number 21
+          .name Patrick Dunlea
+            img.avatar(src='/images/patrick-dunlea.png')
+      .stat.person.grid-item.grid-sm-2.grid-lg-3
+        h2 Oldest Chef
+        .number 58
+          .name John Tesar
+            img.avatar(src='/images/john-tesar.png')
+
+      //- Not Here to Make Friends
+      .featured.cf
+        h2 Chefs Who Are 
+        .phrase “Not here to make friends.”
+        .roster
+          img.avatar(src='/images/tiffani-faison-s1.png')
+          img.avatar(src='/images/marcel-vigneron-s2.png')
+          img.avatar(src='/images/dale-talde-s4.png')
+          img.avatar(src='/images/robin-leventhal.png')
+          img.avatar(src='/images/carlos-gaytan.png')
+
+      //- Challenge Breakdown
+      .stat.grid-item.grid-sm-2.grid-lg-3
+        h2 Average Quickfire Time (min)
+        .number 42
+      .stat.grid-item.grid-sm-2.grid-lg-3
+        h2 Challenges with a Knife Pull
+        .number 82
+      .stat.grid-item.grid-sm-2.grid-lg-3
+        h2 Challenges Cooking for Kids
+        .number 13
+
+      .stat.person.grid-item.grid-sm-2.grid-lg-3
+        h2 Most Quickfire Wins
+        .number 5
+          .roster
+            img.avatar(src='/images/sam-talbot.png')
+            img.avatar(src='/images/gregory-gourdet.png')
+            img.avatar(src='/images/brooke-williamson-s14.png')
+      .stat.person.grid-item.grid-sm-2.grid-lg-3
+        h2 Most Elimination Wins
+        .number 9
+          .name Paul Qui
+            img.avatar(src='/images/paul-qui.png')
+      .stat.person.grid-item.grid-sm-2.grid-lg-3
+        h2 Most Overall Wins
+        .number 11
+          .name Paul Qui
+            img.avatar(src='/images/paul-qui.png')
+
+      .stat.person.grid-item.grid-sm-2.grid-lg-3
+        h2 Top Chef with Least Wins
+        .number 3
+          .name Kevin Sbraga
+            img.avatar(src='/images/kevin-sbraga.png')
+      .stat.grid-item.grid-sm-2.grid-lg-3
+        h2 Challenges Won with Immunity
+        .number 13
+      .stat.person.grid-item.grid-sm-1.grid-lg-3
+        h2 Best Last Chance Kitchen Streak
+        .number 8
+          .name Louis Maldonado
+            img.avatar(src='/images/louis-maldonado.png')
+
+      //- Chef Coats per Season
+      .themed.center.cf
+        h1
+          span Coats by Season
+        .coat
+          img(src='/images/coat-s1-7.png')
+          h2 Seasons 1-7
+        .coat
+          img(src='/images/coat-s8.png')
+          h2 Season 8 - All-Stars
+        .coat
+          img(src='/images/coat-s9.png')
+          h2 Season 9 - Texas
+        .coat
+          img(src='/images/coat-s10.png')
+          h2 Season 10 - Seattle
+        .coat
+          img(src='/images/coat-s11.png')
+          h2 Season 11 - NOLA
+        .coat
+          img(src='/images/coat-s12.png')
+          h2 Season 12 - Boston
+        .coat
+          img(src='/images/coat-s13.png')
+          h2 Season 13 - Cali
+        .coat
+          img(src='/images/coat-s14.png')
+          h2 Season 14 - Charleston
+        .coat
+          img(src='/images/coat-s15.png')
+          h2 Season 15 - Colorado
+
+      //- This Is Top Chef
+      .featured.phrase-list.cf
+        .phrase “This is Top Chef, Not _________.”
+        .grid-item.grid-sm-2.left
+          p Top Sous Chef
+            span S 01
+          p Top Sommelier
+            span S 01
+          p Top Captain
+            span S 01
+          p Top Waiter
+            span S 01
+          p Top Cook
+            span S 03
+          p Top Line Cook
+            span S 13
+          p Top Pussy
+            span S 05
+          p Top Scallops
+            span S 05
+        .grid-item.grid-sm-2.left
+          p A Personality Contest
+            span S 02
+          p A Popularity Contest
+            span S 04
+          p A Housewives’ Cooking Competition
+            span S 01
+          p Culinary Bootcamp Vacation
+            span S 11
+          p Fun and Games and Hot Air Balloons
+            span S 03
+          p A Wet T-shirt Contest
+            span S 11
+          p A Butt-Rubbing Contest
+            span S 05
+
+      //- Restaurant Wars
+      .themed.cf
+        h1
+          span Restaurant Wars
+        .stat.grid-item.grid-sm-1.grid-lg-3
+          h2 Total Restaurants
+          .number 28
+        .stat.grid-item.grid-sm-2.grid-lg-3
+          h2 Menus without Dessert
+          .number 2
+        .stat.grid-item.grid-sm-2.grid-lg-3
+          h2 Didn’t Shop for Decor
+          .number 3
+        .grid-item.grid-sm-2
+          .chart
+            h2 Eliminated Roles
+            .chart-rw-roles
+              span
+              span
+              span
+              span
+              span
+              .chart-bar.bar-5 Executive Chef
+                .number 5
+              .chart-bar.bar-5 Front of House
+                .number 5
+              .chart-bar.bar-4 Line Cook
+                .number 4
+        .grid-item.grid-sm-2
+          .chart
+            h2 Winning Roles
+            .chart-rw-roles
+              span
+              span
+              span
+              span
+              span
+              .chart-bar.bar-5 Executive Chef
+                .number 5
+              .chart-bar.bar-3 Front of House
+                .number 3
+              .chart-bar.bar-5 Line Cook
+                .number 5
+
+      //- A Force to Be Reckoned With
+      .featured.cf
+        h2 Chefs Described As
+        .phrase “A force to be reckoned with.”
+        .roster
+          img.avatar(src='/images/marcel-vigneron-s2.png')
+          img.avatar(src='/images/stephanie-izard.png')
+          img.avatar(src='/images/zoi-antonitsas.png')
+          img.avatar(src='/images/kevin-gillespie.png')
+          img.avatar(src='/images/jennifer-carroll-s6.png')
+          img.avatar(src='/images/angelo-sosa-s7.png')
+          img.avatar(src='/images/tre-wilcox-s8.png')
+          img.avatar(src='/images/carla-hall-s8.png')
+          img.avatar(src='/images/richie-farina.png')
+          img.avatar(src='/images/grayson-schmitz.png')
+          img.avatar(src='/images/brooke-williamson.png')
+          img.avatar(src='/images/nina-compton.png')
+          img.avatar(src='/images/justin-devillier.png')
+          img.avatar(src='/images/gregory-gourdet.png')
+          img.avatar(src='/images/mei-lin.png')
+          img.avatar(src='/images/jeremy-ford.png')
+          img.avatar(src='/images/isaac-toups.png')
+          img.avatar(src='/images/shirley-chung-s14.png')
+
+      //- Quickfires
+      .themed.cf
+        h1
+          span Quickfires
+        .stat.grid-item.grid-sm-2
+          h2 Total Quickfire Challenges
+          .number 190
+        .stat.grid-item.grid-sm-2
+          h2 Total Quickfire Cash Won
+          .number $400k
+
+        .stat.grid-item.grid-sm-1
+          h2 % of Quickfires That Awarded Prizes
+          .grid.percentages
+            .percentage.grid-item.grid-xs-2.grid-sm-3.grid-lg-5
+              .number.percentage-50
+                span 54%
+              h3 Immunity
+            .percentage.grid-item.grid-xs-2.grid-sm-3.grid-lg-5
+              .number.percentage-20
+                span 19%
+              h3 Cash
+            .percentage.grid-item.grid-xs-2.grid-sm-3.grid-lg-5
+              .number.percentage-5
+                span 3%
+              h3 Skip Challenge
+            .percentage.grid-item.grid-xs-2.grid-sm-3.grid-lg-5
+              .number.percentage-10
+                span 8%
+              h3 Choose Ingredients
+            .percentage.grid-item.grid-xs-2.grid-sm-3.grid-lg-5
+              .number.percentage-10
+                span 7%
+              h3 Choose Teammates
+
+        .stat.grid-item.grid-sm-2.grid-lg-3
+          h2 Mise en Place Quickfires
+          .number 14
+        .stat.grid-item.grid-sm-2.grid-lg-3
+          h2 Pairing Quickfires
+          .number 7
+        .stat.grid-item.grid-sm-2.grid-lg-3
+          h2 Blindfolded Quickfires
+          .number 7
+
+      //- Winners Who Won the First Challenge
+      .featured.cf
+        h2 Top Chef Winners Who Won Their Season’s 
+        .phrase First Elimination Challenge 
+        .roster
+          img.avatar(src='/images/harold-dieterle.png')
+          img.avatar(src='/images/ilan-hall.png')
+          img.avatar(src='/images/stephanie-izard.png')
+          img.avatar(src='/images/paul-qui.png')
+          img.avatar(src='/images/mei-lin.png')
+          img.avatar(src='/images/jeremy-ford.png')
+
+      //- Season Finales
+      .themed.cf
+        h1
+          span Season Finales
+        .stat.grid-item.grid-sm-2.grid-lg-3
+          h2 Chefs Competed
+          .number 33
+        .stat.grid-item.grid-sm-2.grid-lg-3
+          h2 Total Courses
+          .number 139
+        .stat.person.grid-item.grid-sm-2.grid-lg-3
+          h2 Most Frequent Finale Diner
+          .number 5
+            .name Hubert Keller
+              img.avatar(src='/images/hubert-keller.png')
+        .stat.person.grid-item.grid-sm-2
+          h2 Winners Who Skipped Dessert
+          .number 2
+            .roster
+              img.avatar(src='/images/kristen-kish.png')
+              img.avatar(src='/images/hosea-rosenberg.png')
+        .stat.person.grid-item.grid-sm-1.grid-lg-2
+          h2 Runners-Up Who Skipped Dessert
+          .number 4
+            .roster
+              img.avatar(src='/images/gregory-gourdet.png')
+              img.avatar(src='/images/brooke-williamson.png')
+              img.avatar(src='/images/dale-levitski-s3.png')
+              img.avatar(src='/images/casey-thompson-s3.png')
+        .stat.grid-item.grid-sm-2
+          h2 Winners Who Made Risotto
+          .number 0
+        .stat.person.grid-item.grid-sm-2
+          h2 Runners-Up Who Made Risotto
+          .number 2
+            .roster
+              img.avatar(src='/images/amar-santana.png')
+              img.avatar(src='/images/tiffani-faison-s1.png')
+
+
+      .stat.person.grid-item.grid-sm-2
+        h2 Top Chef Voted Fan Fave
+        .number 1
+          .name Stephanie Izard
+            img.avatar(src='/images/stephanie-izard.png')
+      .stat.person.grid-item.grid-sm-2
+        h2 Most Times Voted Fan Fave
+        .number 2
+          .name Sheldon Simeon
+            img.avatar(src='/images/sheldon-simeon-s14.png')
+      .stat.person.grid-item.grid-sm-2
+        h2 Chef Turned Judge
+        .number 1
+          .name Richard Blais
+            img.avatar(src='/images/richard-blais-s8.png')
+      .stat.person.grid-item.grid-sm-2
+        h2 Also Competed on Masters
+        .number 1
+          .name Bryan Voltaggio
+            img.avatar(src='/images/bryan-voltaggio.png')
+
+      //- .stat.grid-item.grid-sm-2.grid-lg-3
+      //-   h2 Chefs Who Return for Another Season
+      //-   .number 21
+
+      //- Prizes
+      .featured
+        h2 Total Cash Money Given Away
+        .number $2,370,000
+
+      .stat.person.grid-item.grid-sm-1.grid-lg-2
+        h2 Most Cash Won by a Top Chef
+        .number $225k
+          .name Richard Blais
+            img.avatar(src='/images/richard-blais-s8.png')
+      .stat.person.grid-item.grid-sm-1.grid-lg-2
+        h2 Most Cash Won by a Non-Winner
+        .number $45k
+          .name Kevin Gillespie
+            img.avatar(src='/images/kevin-gillespie.png')
+
+      .themed.cf
+        h1
+          span Other Prizes Awarded
+
+        .stat.grid-item.grid-sm-2.grid-lg-4
+          h2 Trips
+          .number 27
+        .stat.grid-item.grid-sm-2.grid-lg-4
+          h2 Cars 
+          .number 12
+        .stat.grid-item.grid-sm-2.grid-lg-4
+          h2 Cookbooks
+          .number 32
+        .stat.grid-item.grid-sm-2.grid-lg-4
+          h2 Knives
+          .number 22
+
+        .stat.grid-item.grid-sm-2.grid-lg-4
+          h2 Computers
+          .number 1
+        .stat.grid-item.grid-sm-2.grid-lg-4
+          h2 Super Bowl Tickets
+          .number 2
+        .stat.grid-item.grid-sm-2.grid-lg-4
+          h2 Television Spots
+          .number 2
+        .stat.grid-item.grid-sm-2.grid-lg-4
+          h2 Dishes in a Menu/Book
+          .number 10
+
+      //- Ingredients: Winners
+      //- .featured
+      //-   h2 Challenges Won with a Dessert
+      //-   .number 33
+
+      //- .stat.grid-item.grid-sm-2.grid-lg-4
+      //-   h2 Won with Scallops
+      //-   .number 12
+      //- .stat.grid-item.grid-sm-2.grid-lg-4
+      //-   h2 Won with Risotto
+      //-   .number 5
+      //- .stat.grid-item.grid-sm-2.grid-lg-4
+      //-   h2 Won with Soup
+      //-   .number 25
+      //- .stat.grid-item.grid-sm-2.grid-lg-4
+      //-   h2 Won with Sandwiches
+      //-   .number 11
+
+      //- Ingredients: Eliminated
+      .featured
+        h2 Chefs Eliminated for a Dessert
+        .number 12
+
+      .stat.grid-item.grid-sm-2
+        h2 Eliminated for Seafood
+        .number 84
+      .stat.grid-item.grid-sm-2
+        h2 Eliminated for Vegetarian Dish
+        .number 29
+
+      .stat.grid-item.grid-sm-2.grid-lg-4
+        h2 Eliminated for Salad
+        .number 13
+      .stat.grid-item.grid-sm-2.grid-lg-4
+        h2 Eliminated for Soup
+        .number 9
+      .stat.grid-item.grid-sm-2.grid-lg-4
+        h2 Eliminated for Burgers
+        .number 6
+      .stat.grid-item.grid-sm-2.grid-lg-4
+        h2 Eliminated for Risotto
+        .number 5
+
+      //- Other Eliminated
+      .stat.roster-lg.person.grid-item.grid-sm-1.grid-lg-3-1
+        h2 Voluntarily Left Competition
+        .number 5
+          .roster
+            img.avatar(src='/images/lee-anne-wong.png')
+            img.avatar(src='/images/howie-kleinberg.png')
+            img.avatar(src='/images/mia-gaines-alt.png')
+            img.avatar(src='/images/otto-borsich.png')
+            img.avatar(src='/images/cynthia-sestito.png')
+      .stat.person.grid-item.grid-sm-1.grid-lg-3
+        h2 Disqualified from Competition
+        .number 1
+          .name Cliff Crooks
+            img.avatar(src='/images/cliff-crooks.png')
+
+      //- Show Facts
+      .stat.grid-item.grid-sm-2.grid-lg-3
+        h2 Total Emmy Nominations
+        .number 26
+      .stat.grid-item.grid-sm-2.grid-lg-3
+        h2 Total Emmy Wins
+        .number 2
+      .stat.grid-item.grid-sm-2.grid-lg-3
+        h2 Official Top Chef Cookbooks
+        .number 3

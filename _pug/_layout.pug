@@ -1,0 +1,30 @@
+doctype
+html
+
+  block vars
+
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+
+    title Top Chef Stats 
+      block title
+    meta(name='description', content='Compiled stats and facts across 13 seasons of Top Chef.')
+    link(rel='stylesheet', href='/css/main.min.css')
+
+    meta(property='og:site_name', content='Top Chef Stats')
+    meta(property='og:url', content='https://topchefstats.com')
+    meta(property='og:description', content='Compiled stats and facts across 13 seasons of Top Chef.')
+    meta(property='og:image', content='https://topchefstats.com/images/facebook-top-chef-stats.png')
+    meta(property='og:type', content='website')
+
+  body
+
+    include include/nav-main
+
+    block content
+
+    include include/footer
+
+    include include/ga.html
