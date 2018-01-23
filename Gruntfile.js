@@ -1,4 +1,3 @@
-var RastaSync = require('./rasta-sync');
 var path = require('path');
 var NODE_ENV = process.env.NODE_ENV || 'development';
 
@@ -6,9 +5,6 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-stylus');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
     grunt.loadNpmTasks('grunt-contrib-pug');
-
-    grunt.loadNpmTasks('grunt-browserify');
-    grunt.loadNpmTasks('grunt-contrib-uglify');
 
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-contrib-connect');
@@ -68,27 +64,6 @@ module.exports = function(grunt) {
             }
         },
 
-        //- browserify the main javascript file to the output js dir
-        browserify: {
-            main: {
-                src: '_js/main.js',
-                dest: 'public/js/main.js',
-            }
-        },
-
-        //- minify any js files in the output dir
-        uglify: {
-            target: {
-                files: [{
-                    expand: true,
-                    cwd: 'public/js',
-                    src: ['*.js', '!*.min.js'],
-                    dest: 'public/js',
-                    ext: '.min.js'
-                }]
-          }
-        },
-
         copy: {
             public: {
                 files: [
@@ -103,7 +78,7 @@ module.exports = function(grunt) {
         },
         watch: {
             build: {
-                files: ['_styl/**/*.styl', '_pug/**/*.pug', 'team/**/*.md', '_images/**', '_js/**'],
+                files: ['_styl/**/*.styl', '_pug/**/*.pug', '_images/**'],
                 tasks: ['build'],
                 options: {
                     livereload: true
@@ -122,7 +97,7 @@ module.exports = function(grunt) {
         }
     });
 
-    grunt.registerTask('build', ['stylus', 'cssmin', 'browserify', 'uglify', 'pug', 'copy'])
+    grunt.registerTask('build', ['stylus', 'cssmin', 'pug', 'copy'])
     grunt.registerTask('serve', ['build', 'connect:server', 'watch'])
     grunt.registerTask('default', ['build'])
 };
