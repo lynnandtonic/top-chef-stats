@@ -43,6 +43,7 @@ module.exports = function(grunt) {
                     src: ['**/*.pug'],
                     dest: 'public',
                     ext: '.html',
+                    'public/404.html': ['_pug/404.pug'],
                     //Don't render pug files in include or with a _ in the front
                     filter: function (src) {
                         if (src.indexOf('include') > -1) {
@@ -55,7 +56,7 @@ module.exports = function(grunt) {
                     },
                     //Move non index.html files into their own dir for clean paths
                     rename: function (dest, src) {
-                        if (src !== 'index.html') {
+                        if (src !== 'index.html' && src !== '404.html') {
                             return dest + '/' + src.replace('.html', '/index.html');
                         }
                         return dest + '/' + src;
