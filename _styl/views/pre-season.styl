@@ -1,0 +1,174 @@
+.pre-season
+  max-width: 1120px
+  margin: 0 auto 50px
+
+  .avatar
+    position: absolute
+
+  .chef
+    position: relative
+
+  .p-season
+    display: flex
+    align-items: top
+
+  .item
+    position: relative
+    flex: 1
+
+    &:before
+      width: 100%
+      position: absolute
+      top: 0
+      text-transform: uppercase
+      font-size: 60%
+      opacity: .7
+
+    &.chef-qf,
+    &.chef-elim,
+    &.chef-total
+      text-align: center
+      &:before
+        left: 50%
+        transform: translateX(-50%)
+
+    &.chef-season
+      span
+        display: inline-block
+        margin-left: 5px
+        font-size: 70%
+
+  .p-season:first-child
+    .item
+      padding-top: 25px
+      margin-bottom: 5px
+      &.chef-season
+        &:before
+          content: 'Season'
+      &.chef-place:before
+          content: 'Place'
+      &.chef-total:before
+          content: 'Total wins'
+      &.chef-qf:before
+          content: 'QF wins'
+      &.chef-elim:before
+          content: 'Elim. wins'
+      &.chef-bye:before
+          content: 'Eliminated'
+
+  @media screen and (max-width: 460px)
+
+    .item
+      &.chef-bye
+        display: none
+
+  @media screen and (max-width: 700px)
+    .chef
+      padding-top: 40px
+      border-top: $ui-border
+
+    .avatar
+      top: -15px
+
+    .item
+      margin-bottom: 5px
+
+      &.chef-season
+        flex: 2
+
+    .p-season:first-child
+      .item
+        &.chef-total:before
+            content: 'Wins'
+        &.chef-qf:before
+            content: 'QF'
+        &.chef-elim:before
+            content: 'Elim.'
+
+  @media screen and (min-width: 701px)
+
+    .chef
+      padding: 20px
+      background-color: black(.1)
+
+    .item
+      &.chef-place
+        flex: .5
+
+  @media screen and (min-width: 701px) and (max-width: 1020px)
+
+    .chef
+      padding-top: 60px
+
+    .avatar
+      top: -35px
+
+  @media screen and (max-width: 1020px)
+
+    .chef
+      margin-bottom: 40px
+
+    .avatar
+      left: 50%
+      transform: translateX(-50%)
+
+    .chef-name
+      margin-bottom: 20px
+      text-align: center
+
+    .item
+      &.chef-bye
+        flex: 1.5
+
+  @media screen and (min-width: 1021px)
+    .chef
+      margin-left: 20px
+      margin-bottom: 30px
+      padding-left: 55px
+      display: flex
+      align-items: flex-start
+
+    .chef-name
+      flex-basis: 180px
+      padding-top: 25px
+      position: relative
+
+      &:before
+        content: 'Chef'
+        position: absolute
+        top: 0
+        text-transform: uppercase
+        font-size: 60%
+        opacity: .7
+
+    .p-season-list
+      flex-grow: 3
+
+    .avatar
+      left: -40px
+      top: 50%
+      transform: translateY(-50%)
+
+    .item
+      margin-right: 40px
+
+      &:last-child
+        margin-right: 0
+
+      &.chef-season
+        flex-basis: 80px
+        span
+          margin-left: 2px
+          font-size: 13px
+      &.chef-place
+        flex-basis: 20px
+      &.chef-total
+        flex-basis: 100px
+        margin-right: 0
+      &.chef-qf
+        flex-basis: 70px
+        margin-right: 15px
+      &.chef-elim
+        flex-basis: 70px
+      &.chef-bye
+        flex-basis: 200px

@@ -34,12 +34,13 @@ $nav-border = 1px solid white(.3)
   .nav-seasons li
     width: 25%
 
-    &:nth-child(-n+12)
+    &:nth-child(-n+16)
       border-bottom: $nav-border
 
     &:nth-child(4),
     &:nth-child(8),
-    &:nth-child(12)
+    &:nth-child(12),
+    &:nth-child(16)
       border-right: none
 
 @media screen and (min-width: 401px) and (max-width: 650px)
@@ -53,6 +54,9 @@ $nav-border = 1px solid white(.3)
     &:nth-child(5),
     &:nth-child(10)
       border-right: none
+
+    &:nth-child(17)
+      width: 40%
 
 @media screen and (min-width: 651px) and (max-width: 1200px)
 
@@ -68,13 +72,10 @@ $nav-border = 1px solid white(.3)
 @media screen and (min-width: 1201px)
 
   .nav-seasons li
-    width: 12.5%
+    width: 11.111%
 
-    &:nth-child(-n+8)
+    &:nth-child(-n+16)
       border-bottom: $nav-border
 
-    &:nth-child(8)
+    &:nth-child(9)
       border-right: none
-
-    // &:last-child
-    //   border-right: none
