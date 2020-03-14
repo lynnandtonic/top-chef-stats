@@ -1,0 +1,48 @@
+.mise-list
+  padding: 20px 0 60px
+  display: grid
+
+  .mise-item
+    position: relative
+
+  .icon
+    font-weight: bold
+
+    img
+      position: absolute
+      left: 0
+
+  h4
+    font-size: 80%
+
+  @media screen and (max-width: $bp-small)
+    padding: 20px 0
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr))
+    grid-column-gap: 20px
+    grid-row-gap: 30px
+
+    .mise-item
+      padding-left: 35px
+
+    .icon
+      font-size: 30px
+
+      img
+        width: 25px
+        top: 10px
+
+  @media screen and (min-width: $bp-small + 1)
+    padding: 20px 25px 60px
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr))
+    grid-column-gap: 30px
+    grid-row-gap: 40px
+
+    .mise-item
+      padding-left: 55px
+
+    .icon
+      font-size: 50px
+
+      img
+        width: 40px
+        top: 15px
