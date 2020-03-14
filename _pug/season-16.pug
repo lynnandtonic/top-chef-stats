@@ -1,7 +1,9 @@
 extends _layout
 
-block title
-  | | Season 16
+block vars
+  - var pageDescription = 'Compiled stats and facts from Top Chef Season 16: Kentucky.'
+  - var bodyClass = 'season-16'
+  - var title = 'Season 16'
 
 block content
 
@@ -14,7 +16,7 @@ block content
 
     .grid.cf
 
-      ol.ranking.current.grid-item.grid-sm-2.grid-lg-3
+      ol.ranking.grid-item.grid-sm-2.grid-lg-3
         li
           div.chef
           span Kelsey Barnard Clark
