@@ -71,19 +71,19 @@ block content
           .number 39
 
       //- Chef Ages
-      .stat.grid-item.grid-sm-2.grid-lg-3
-        h2 Average Chef Age
-        .number 33
-      .stat.person.grid-item.grid-sm-2.grid-lg-3
-        h2 Youngest Chef
-        .number 21
-          .name Patrick Dunlea
-            img.avatar(loading='lazy' src='/images/patrick-dunlea.png')
-      .stat.person.grid-item.grid-sm-2.grid-lg-3
-        h2 Oldest Chef
-        .number 58
-          .name John Tesar
-            img.avatar(loading='lazy' src='/images/john-tesar.png')
+      //- .stat.grid-item.grid-sm-2.grid-lg-3
+      //-   h2 Average Chef Age
+      //-   .number 33
+      //- .stat.person.grid-item.grid-sm-2.grid-lg-3
+      //-   h2 Youngest Chef
+      //-   .number 21
+      //-     .name Patrick Dunlea
+      //-       img.avatar(loading='lazy' src='/images/patrick-dunlea.png')
+      //- .stat.person.grid-item.grid-sm-2.grid-lg-3
+      //-   h2 Oldest Chef
+      //-   .number 58
+      //-     .name John Tesar
+      //-       img.avatar(loading='lazy' src='/images/john-tesar.png')
 
       //- Not Here to Make Friends
       .featured.cf
@@ -99,7 +99,7 @@ block content
       //- Challenge Breakdown
       .stat.grid-item.grid-sm-2.grid-lg-3
         h2 Average Quickfire Time (min)
-        .number 41.6
+        .number 41.5
       .stat.grid-item.grid-sm-2.grid-lg-3
         h2 Challenges with a Knife Pull
         .number 91
@@ -187,6 +187,9 @@ block content
         .coat
           img(loading='lazy' src='/images/coat-s16.png' alt='white Top Chef chef coat with whiskey barrel on the shoulder')
           h2 Season 16 - Kentucky
+        .coat
+          img(loading='lazy' src='/images/coat-s17.png' alt='black Top Chef chef coat with knife emblem on the shoulder')
+          h2 Season 17 - All-Stars L.A.
 
       //- This Is Top Chef
       .featured.phrase-list.cf
@@ -301,6 +304,7 @@ block content
           img.avatar(loading='lazy' src='/images/jeremy-ford.png' alt='Jeremy Ford')
           img.avatar(loading='lazy' src='/images/isaac-toups.png' alt='Isaac Toups')
           img.avatar(loading='lazy' src='/images/shirley-chung-s14.png' alt='Shirley Chung')
+          img.avatar(loading='lazy' src='/images/jamie-lynch-s17.png' alt='Jamie Lynch')
 
       //- Quickfires
       .themed.cf
@@ -308,7 +312,7 @@ block content
           span Quickfires
         .stat.grid-item.grid-sm-2
           h2 Total Quickfire Challenges
-          .number 209
+          .number 210
         .stat.grid-item.grid-sm-2
           h2 Total Quickfire Cash Won
           .number $430k
@@ -318,7 +322,7 @@ block content
           .grid.percentages
             .percentage.grid-item.grid-xs-2.grid-sm-3.grid-lg-5
               .number.percentage-50
-                span 52%
+                span 51%
               h3 Immunity
             .percentage.grid-item.grid-xs-2.grid-sm-3.grid-lg-5
               .number.percentage-20
@@ -330,30 +334,31 @@ block content
               h3 Skip Challenge
             .percentage.grid-item.grid-xs-2.grid-sm-3.grid-lg-5
               .number.percentage-10
-                span 8%
+                span 9%
               h3 Choose Ingredients
             .percentage.grid-item.grid-xs-2.grid-sm-3.grid-lg-5
               .number.percentage-10
-                span 8%
+                span 9%
               h3 Choose Teammates
 
         .stat.grid-item.grid-sm-2
           h2 Is winning an advantage actually beneficial?
           .number Yes
-          .detail With an advantage, #[strong 65%] of chefs were safe from the bottom and #[strong 25%] won the challenge.
+          .detail With an advantage, #[strong 66%] of chefs were safe from the bottom and #[strong 23%] won the challenge.
 
-        .stat.person.grid-item.grid-sm-2
+        .stat.person.grid-item.grid-sm-2.roster-xl
           h2 Chefs eliminated after winning an advantage
-          .number 4
+          .number 5
             .roster
               img.avatar(loading='lazy' src='/images/spike-mendelsohn-s4.png' alt='Spike Mendelsohn')
               img.avatar(loading='lazy' src='/images/radhika-desai.png' alt='Radhika Desai')
               img.avatar(loading='lazy' src='/images/brother-luck.png' alt='Brother Luck')
               img.avatar(loading='lazy' src='/images/michelle-minori.png' alt='Michelle Minori')
+              img.avatar(loading='lazy' src='/images/joe-sasto-s17.png' alt='Joe Sasto')
 
         .stat.grid-item.grid-sm-2.grid-lg-3.clear
           h2 Mise en Place Quickfires
-          .number 15
+          .number 16
         .stat.grid-item.grid-sm-2.grid-lg-3
           h2 Pairing Quickfires
           .number 7
@@ -432,15 +437,17 @@ block content
           +mise('apple','255','Peeled apples')
           +mise('shrimp','210','Peeled & deveined shrimp')
           +mise('clam','174','Shucked clams')
+          +mise('potato','170','Peeled potatoes')
           +mise('potato','150','Tournée potatoes')
           +mise('onion','146','Cups diced onion')
           +mise('egg','126','Separated eggs')
           +mise('prawn','120','Peeled spot prawns')
           +mise('oyster','110','Shucked oysters')
+          +mise('almond','100','Cracked almonds')
           +mise('asparagus','90','Peeled asparagus')
-          +mise('artichoke','82','Turned artichokes')
+          +mise('artichoke','127','Turned artichokes')
           +mise('chicken','65','Broken down chickens')
-          +mise('orange','45','Supremed oranges')
+          +mise('orange','95','Supremed oranges')
           +mise('beef','40','Butchered beef tenderloin')
           +mise('lamb','36','Butchered lamb racks')
           +mise('beef','35','Butchered Tomahawk chops')
@@ -575,11 +582,11 @@ block content
       //- Ingredients: Eliminated
       .featured
         h2 Chefs Eliminated for a Dessert
-        .number 14
+        .number 15
 
       .stat.grid-item.grid-sm-2
         h2 Eliminated for Seafood
-        .number 84
+        .number 88
       .stat.grid-item.grid-sm-2
         h2 Eliminated for Vegetarian Dish
         .number 32

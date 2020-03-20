@@ -13,6 +13,8 @@ block content
       h1
         span Season 17
         span All-Stars L.A.
+      p.m0 How did the chefs do in previous seasons?
+      p Check out their #[a(href='/allstars-preseason') pre-season stats].
 
     .grid.cf
 
@@ -59,10 +61,13 @@ block content
         li
           div.chef
           span
+        li
+          div.chef
+          span Joe Sasto
 
       .grid-item.grid-sm-2.grid-lg-3-1.p0
 
-        .stat.person.grid-item.grid-sm-1
+        .stat.person.grid-item.grid-sm-1.grid-lg-2
           h2 Host &amp; Judges
           .roster
             img.avatar(src='/images/padma-lakshmi.png' alt='Padma Lakshmi')
@@ -71,34 +76,51 @@ block content
 
         .stat.grid-item.grid-sm-1.grid-lg-2
           h2 Total Guest Judges
-          .number 0
+          .number 1
 
         .stat.grid-item.grid-sm-1.grid-lg-2
           h2 Total Challenges
-          .number 0
+          .number 2
 
         .stat.grid-item.grid-sm-1.grid-lg-2
           h2 Total Team Challenges
-          .number 6
+          .number 2
 
-        .stat.grid-item.grid-sm-1.grid-lg-2
-          h2 Total Sudden Death Quickfires
-          .number 0
+        //- .stat.grid-item.grid-sm-1.grid-lg-2
+        //-   h2 Total Sudden Death Quickfires
+        //-   .number 0
 
-        .stat.person.grid-item.grid-sm-1.grid-lg-2
+        .stat.person.grid-item.grid-sm-1.roster-xl
           h2 Most Quickfire Wins
-          .number 0
-            .name
-
-        .stat.person.grid-item.grid-sm-1.grid-lg-2
-          h2 Most Elimination Wins
-          .number 0
-            .name
+          .number 1
+            .roster
+              img.avatar(src='/images/kevin-gillespie-s17.png' alt='Kevin Gillespie')
+              img.avatar(src='/images/jamie-lynch-s17.png' alt='Jamie Lynch')
+              img.avatar(src='/images/joe-sasto-s17.png' alt='Joe Sasto')
+              img.avatar(src='/images/melissa-king-s17.png' alt='Melissa King')
+              img.avatar(src='/images/bryan-voltaggio-s17.png' alt='Bryan Voltaggio')
 
         .stat.person.grid-item.grid-sm-1
-          h2 Most Overall Wins
-          .number 0
-            .name
+          h2 Most Elimination Wins
+          .number 1
+            .name Gregory Gourdet
+              img.avatar(src='/images/gregory-gourdet-s17.png')
+
+        //- .stat.person.grid-item.grid-sm-1.grid-lg-2
+        //-   h2 Most Overall Wins
+        //-   .number 0
+        //-     .name
+
+        .featured.relay-race
+          h2 Mise en place Race Winner
+          .phrase First 5 Finished
+          .roster.center
+            img.avatar(src='/images/kevin-gillespie-s17.png' alt='Kevin Gillespie')
+            img.avatar(src='/images/jamie-lynch-s17.png' alt='Jamie Lynch')
+            img.avatar(src='/images/joe-sasto-s17.png' alt='Joe Sasto')
+            img.avatar(src='/images/melissa-king-s17.png' alt='Melissa King')
+            img.avatar(src='/images/bryan-voltaggio-s17.png' alt='Bryan Voltaggio')
+            img.avatar(src='/images/gregory-gourdet-s17.png' alt='Gregory Gourdet')
 
         //- .stat.grid-item.grid-sm-1.grid-lg-2
         //-   h2 Total Wins With Immunity
@@ -166,9 +188,3 @@ block content
         //- .featured.finale
         //-   h2 Finale Location
         //-   .phrase Macau, China
-
-        //- .stat.person.grid-item.grid-sm-1
-        //-   h2 Chefs Who Later Compete in Another Season
-        //-   .number 1
-        //-     .roster
-        //-       img.avatar(src='/images/eric-adjepong.png' alt='Eric Adjepong')
