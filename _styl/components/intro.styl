@@ -4,6 +4,11 @@
   background: black(.1)
   text-align: center
 
+  @media screen and (min-width: $bp-small + 1) and (max-width: $bp-large)
+    margin-bottom: 60px
+  @media screen and (min-width: $bp-large + 1)
+    margin-bottom: 100px
+
   img
     width: auto
     height: 50px
@@ -14,51 +19,22 @@
       height: 80px
 
   h1
-    font-size: 45px
+    @media screen and (max-width: 500px)
+      font-size: 2em
+    @media screen and (min-width: 501px)
+      font-size: 2.5em
 
     span
       display: block
     span:last-child
-      font-size: 26px
+      font-size: .5em
       font-weight: normal
 
   h2
     margin-bottom: 20px
-    font-size: 24px
+    font-size: 1.3em
 
   p
     max-width: 500px
     margin-left: auto
     margin-right: auto
-
-  p.new
-
-    &:before
-      margin-right: 10px
-      padding: 5px 10px 4px
-      position: relative
-      top: -2px
-      content: 'NEW!'
-      display: inline-block
-      background: black(.2)
-      border-radius: 3px
-      font-size: 12px
-      font-weight: bold
-
-@media screen and (max-width: 500px)
-
-  .intro h1
-    font-size: 35px
-
-    span:last-child
-      font-size: 20px
-
-@media screen and (min-width: $bp-small + 1) and (max-width: $bp-large)
-
-  .intro
-    margin-bottom: 60px
-
-@media screen and (min-width: $bp-large + 1)
-
-  .intro
-    margin-bottom: 100px
