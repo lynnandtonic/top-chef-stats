@@ -1,0 +1,31 @@
+.roster
+
+  .avatar
+    margin: 0 -5px
+    position: relative
+    z-index: 2
+
+  .winner
+    display: inline-block
+    position: relative
+
+    &:before
+      width: 100%
+      display: block
+      position: absolute
+      left: 0
+      content: 'WINNER!'
+      z-index: 1
+      font-size: 11px
+      font-weight: bold
+      letter-spacing: 1px
+      color: white
+
+      @media screen and (max-width: $bp-small)
+        top: 75px
+
+      @media screen and (min-width: $bp-small + 1)
+        top: 92px
+
+h2 + .roster
+  margin-top: 15px

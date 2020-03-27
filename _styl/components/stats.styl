@@ -1,121 +1,62 @@
 .stat
 
   .number
-    position: relative
     font-weight: bold
+    display: flex
+    align-items: flex-start
 
     span
       display: inline-block
-
     span + span
       margin-left: 15px
 
+    .roster,
+    .name
+      padding-left: 10px
+      flex: 1
+      display: flex
+      justify-content: flex-end
+      align-items: center
+
     .roster
-      padding-left: 50px
-      position: absolute
-      right: 0
+      flex-wrap: wrap
 
-      .avatar
-        float: right
+  @media screen and (max-width: $bp-small)
 
-  .detail
-    font-size: 90%
-    strong
-      padding: 2px 8px
-      display: inline-block
-      background-color: black(.2)
-      border-radius: 3px
+    &.person + .stat:not(.person)
+      margin-top: 10px
+      border-top: $ui-border
 
-  .name
-    margin-left: 10px
-    display: inline-block
-    position: absolute
-    background: black(.2)
-    border-radius: 3px
-    font-weight: normal
-    line-height: 1
-
-    .avatar
-      display: block
-      position: absolute
-
-@media screen and (max-width: $bp-small)
-
-  .stat.person + .stat:not(.person)
-    margin-top: 10px
-    border-top: $ui-border
-
-  .stat:not(.person)
-    padding: 10px 0
-    border-bottom: $ui-border
-
-    h2
-      padding-top: 10px
-      float: left
-
-    .number
-      text-align: right
-      font-size: 30px
-
-    .woman,
-    .man
-      background-position: left 9px
-      background-size: auto 23px
-      padding-left: 23px
-
-  .stat.person
-
-    h2
-      padding: 20px 0 5px
+    &:not(.person)
+      padding: 10px 0
       border-bottom: $ui-border
+      display: flex
+      justify-content: space-between
+      align-items: center
 
-    .number
-      font-size: 40px
+      .number
+        font-size: 1.8em
+
+    &.person
+
+      h2
+        padding: 20px 0 5px
+        border-bottom: $ui-border
+
+      .number
+        font-size: 2.5em
 
       .roster
-        top: 8px
+        padding-top: 5px
 
-    .name
-      padding: 8px 15px 8px 10px
-      top: 15px
-      right: 30px
-      font-size: 14px
-
-      .avatar
-        top: -12px
-        right: -35px
-
-  .detail
-    width: 80%
-
-@media screen and (min-width: $bp-small + 1)
-
-  .stat
+  @media screen and (min-width: $bp-small + 1)
 
     h2
       border-bottom: $ui-border
 
     .number
-      font-size: 85px
+      font-size: 4.7em
 
-      .roster
-        top: 15px
-
+    .roster,
     .name
-      padding: 8px 45px 6px 10px
-      top: 50px
-      right: 40px
-      font-size: 16px
-
-      .avatar
-        top: -32px
-        right: -45px
-
-    .woman,
-    .man
-      background-position: left center
-      background-size: auto 50px
-      padding-left: 40px
-
-  .detail
-    max-width: 385px
+      padding-top: 15px
