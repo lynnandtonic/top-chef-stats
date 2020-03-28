@@ -20,7 +20,6 @@ $nav-height-short = 45px
       display: block
       float: left
       background: white(.15)
-      border-left: 1px solid white(.2)
 
       &:hover
         background: white(.2)
@@ -47,7 +46,7 @@ $nav-height-short = 45px
 
   .nav-main
     height: $nav-height-tall
-    font-size: 15px
+    font-size: .8em
 
     .nav-home
       height: 40px
@@ -60,9 +59,13 @@ $nav-height-short = 45px
         height: 40px
         padding: 10px
         text-align: center
+        
+        &:not(:last-child)
+          border-right: 1px solid white(.2)
 
       label, & > a:not(.wide)
         width: 22.66%
+
       & > a.wide
         width: 32%
 
@@ -72,7 +75,7 @@ $nav-height-short = 45px
 @media screen and (max-width: 400px)
 
   .nav-main
-    font-size: 13px
+    font-size: .65em
 
 @media screen and (min-width: 651px)
 
@@ -89,6 +92,7 @@ $nav-height-short = 45px
       label, & > a
         height: 100%
         padding: 10px 20px
+        border-left: 1px solid white(.2)
 
   .nav-seasons
     top: $nav-height-short

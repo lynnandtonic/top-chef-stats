@@ -23,7 +23,8 @@ block content
         .number 17
       .stat.person.grid-item.grid-sm-2.grid-lg-3
         h2 Total Hosts
-        .number 2
+        .number
+          .value 2
           .roster
             img.avatar(src='/images/padma-lakshmi.png' alt='Padma Lakshmi')
             img.avatar(src='/images/katie-lee.png' alt='Katie Lee')
@@ -49,8 +50,10 @@ block content
 
       .stat.person.grid-item.grid-sm-2
         h2 Most Frequent Guest Judge
-        .number 10
-          .name Eric Ripert
+        .number
+          .value 10
+          .name
+            span Eric Ripert
             img.avatar(src='/images/eric-ripert.png')
 
       //- Locations
@@ -76,13 +79,17 @@ block content
       //-   .number 33
       //- .stat.person.grid-item.grid-sm-2.grid-lg-3
       //-   h2 Youngest Chef
-      //-   .number 21
-      //-     .name Patrick Dunlea
+      //-   .number
+        .value 21
+      //-    
+        span .name Patrick Dunlea
       //-       img.avatar(loading='lazy' src='/images/patrick-dunlea.png')
       //- .stat.person.grid-item.grid-sm-2.grid-lg-3
       //-   h2 Oldest Chef
-      //-   .number 58
-      //-     .name John Tesar
+      //-   .number
+        .value 58
+      //-    
+        span .name John Tesar
       //-       img.avatar(loading='lazy' src='/images/john-tesar.png')
 
       //- Not Here to Make Friends
@@ -109,25 +116,31 @@ block content
 
       .stat.person.grid-item.grid-sm-2.grid-lg-3
         h2 Most Quickfire Wins
-        .number 5
+        .number
+          .value 5
           .roster
             img.avatar(loading='lazy' src='/images/sam-talbot.png' alt='Sam Talbot')
             img.avatar(loading='lazy' src='/images/gregory-gourdet.png' alt='Gregory Gourdet')
             img.avatar(loading='lazy' src='/images/brooke-williamson-s14.png' alt='Brooke Williamson')
       .stat.person.grid-item.grid-sm-2.grid-lg-3
         h2 Most Elimination Wins
-        .number 9
-          .name Paul Qui
+        .number
+          .value 9
+          .name
+            span Paul Qui
             img.avatar(loading='lazy' src='/images/paul-qui.png')
       .stat.person.grid-item.grid-sm-2.grid-lg-3
         h2 Most Overall Wins
-        .number 11
-          .name Paul Qui
+        .number
+          .value 11
+          .name
+            span Paul Qui
             img.avatar(loading='lazy' src='/images/paul-qui.png')
 
       .stat.person.grid-item.grid-sm-2.grid-lg-3
         h2 Top Chef with Least Wins
-        .number 3
+        .number
+          .value 3
           .roster
             img.avatar(loading='lazy' src='/images/kevin-sbraga.png' alt='Kevin Sbraga')
             img.avatar(loading='lazy' src='/images/kelsey-barnard.png' alt='Kelsey Barnard')
@@ -136,60 +149,67 @@ block content
         .number 13
       .stat.person.grid-item.grid-sm-1.grid-lg-3
         h2 Best Last Chance Kitchen Streak
-        .number 8
-          .name Louis Maldonado
+        .number
+          .value 8
+          .name
+            span Louis Maldonado
             img.avatar(loading='lazy' src='/images/louis-maldonado.png')
       .stat.person.grid-item.grid-sm-2.grid-lg-3
         h2 First chef to win a full episode
-        .number 1
-          .name Michael Midgley
+        .number
+          .value 1
+          .name
+            span Michael Midgley
             img.avatar(loading='lazy' src='/images/michael-midgley.png')
       .stat.grid-item.grid-sm-2.grid-lg-3
         h2 Chefs who win a full episode
         .number 25
       .stat.person.grid-item.grid-sm-1.grid-lg-3
         h2 Most full episode wins
-        .number 3
-          .name Stefan Richter
+        .number
+          .value 3
+          .name
+            span Stefan Richter
             img.avatar(loading='lazy' src='/images/stefan-richter-s5.png')
 
       //- Chef Coats per Season
       .themed.center.cf
         h1
           span Coats by Season
-        .coat
-          img(loading='lazy' src='/images/coat-s1-7.png' alt='white Top Chef chef coat')
-          h2 Seasons 1-7
-        .coat
-          img(loading='lazy' src='/images/coat-s8.png' alt='black Top Chef chef coat')
-          h2 Season 8 - All-Stars
-        .coat
-          img(loading='lazy' src='/images/coat-s9.png' alt='blue Top Chef chef coat with texas on the shoulder')
-          h2 Season 9 - Texas
-        .coat
-          img(loading='lazy' src='/images/coat-s10.png' alt='blue Top Chef chef coat with space needle on the shoulder')
-          h2 Season 10 - Seattle
-        .coat
-          img(loading='lazy' src='/images/coat-s11.png' alt='white Top Chef chef coat with fleur de lis on the shoulder')
-          h2 Season 11 - NOLA
-        .coat
-          img(loading='lazy' src='/images/coat-s12.png' alt='white Top Chef chef coat with B on the shoulder')
-          h2 Season 12 - Boston
-        .coat
-          img(loading='lazy' src='/images/coat-s13.png' alt='white Top Chef chef coat with a bear on the shoulder')
-          h2 Season 13 - Cali
-        .coat
-          img(loading='lazy' src='/images/coat-s14.png' alt='white Top Chef chef coat with S.C. on the shoulder')
-          h2 Season 14 - Charleston
-        .coat
-          img(loading='lazy' src='/images/coat-s15.png' alt='white Top Chef chef coat with mountains on the shoulder')
-          h2 Season 15 - Colorado
-        .coat
-          img(loading='lazy' src='/images/coat-s16.png' alt='white Top Chef chef coat with whiskey barrel on the shoulder')
-          h2 Season 16 - Kentucky
-        .coat
-          img(loading='lazy' src='/images/coat-s17.png' alt='black Top Chef chef coat with knife emblem on the shoulder')
-          h2 Season 17 - All-Stars L.A.
+        .coats-list
+          .coat
+            img(loading='lazy' src='/images/coat-s1-7.png' alt='white Top Chef chef coat')
+            h2 Seasons 1-7
+          .coat
+            img(loading='lazy' src='/images/coat-s8.png' alt='black Top Chef chef coat')
+            h2 Season 8 - All-Stars
+          .coat
+            img(loading='lazy' src='/images/coat-s9.png' alt='blue Top Chef chef coat with texas on the shoulder')
+            h2 Season 9 - Texas
+          .coat
+            img(loading='lazy' src='/images/coat-s10.png' alt='blue Top Chef chef coat with space needle on the shoulder')
+            h2 Season 10 - Seattle
+          .coat
+            img(loading='lazy' src='/images/coat-s11.png' alt='white Top Chef chef coat with fleur de lis on the shoulder')
+            h2 Season 11 - NOLA
+          .coat
+            img(loading='lazy' src='/images/coat-s12.png' alt='white Top Chef chef coat with B on the shoulder')
+            h2 Season 12 - Boston
+          .coat
+            img(loading='lazy' src='/images/coat-s13.png' alt='white Top Chef chef coat with a bear on the shoulder')
+            h2 Season 13 - Cali
+          .coat
+            img(loading='lazy' src='/images/coat-s14.png' alt='white Top Chef chef coat with S.C. on the shoulder')
+            h2 Season 14 - Charleston
+          .coat
+            img(loading='lazy' src='/images/coat-s15.png' alt='white Top Chef chef coat with mountains on the shoulder')
+            h2 Season 15 - Colorado
+          .coat
+            img(loading='lazy' src='/images/coat-s16.png' alt='white Top Chef chef coat with whiskey barrel on the shoulder')
+            h2 Season 16 - Kentucky
+          .coat
+            img(loading='lazy' src='/images/coat-s17.png' alt='black Top Chef chef coat with knife emblem on the shoulder')
+            h2 Season 17 - All-Stars L.A.
 
       //- This Is Top Chef
       .featured.phrase-list.cf
@@ -240,11 +260,11 @@ block content
         .stat.grid-item.grid-sm-2.grid-lg-3
           h2 Weren’t responsible for decor
           .number 4
-        .stat.grid-item.grid-sm-2
+        .stat.question.grid-item.grid-sm-2
           h2 Is it beneficial to choose your team first?
           .number No
           .detail Of the #[strong 11] teams who chose first when building their team, only #[strong 3] won Restaurant Wars.
-        .stat.grid-item.grid-sm-2
+        .stat.question.grid-item.grid-sm-2
           h2 Is it beneficial to serve the judges first?
           .number Yes
           .detail Of the #[strong 15] teams who served the judges first, #[strong 10] won Restaurant Wars.
@@ -317,7 +337,7 @@ block content
           h2 Total Quickfire Cash Won
           .number $430k
 
-        .stat.grid-item.grid-sm-1
+        .stat.no-flex.grid-item.grid-sm-1
           h2 % of Quickfires That Awarded Prizes
           .grid.percentages
             .percentage.grid-item.grid-xs-2.grid-sm-3.grid-lg-5
@@ -341,14 +361,15 @@ block content
                 span 9%
               h3 Choose Teammates
 
-        .stat.grid-item.grid-sm-2
+        .stat.question.grid-item.grid-sm-2
           h2 Is winning an advantage actually beneficial?
           .number Yes
           .detail With an advantage, #[strong 66%] of chefs were safe from the bottom and #[strong 23%] won the challenge.
 
-        .stat.person.grid-item.grid-sm-2.roster-xl
+        .stat.person.grid-item.grid-sm-2
           h2 Chefs eliminated after winning an advantage
-          .number 5
+          .number
+            .value 5
             .roster
               img.avatar(loading='lazy' src='/images/spike-mendelsohn-s4.png' alt='Spike Mendelsohn')
               img.avatar(loading='lazy' src='/images/radhika-desai.png' alt='Radhika Desai')
@@ -401,24 +422,31 @@ block content
 
       .stat.person.grid-item.grid-sm-2
         h2 Top Chef Voted Fan Fave
-        .number 2
+        .number
+          .value 2
           .roster
             img.avatar(loading='lazy' src='/images/stephanie-izard.png' alt='Stephanie Izard')
             img.avatar(loading='lazy' src='/images/kelsey-barnard.png' alt='Kelsey Barnard')
       .stat.person.grid-item.grid-sm-2
         h2 Most Times Voted Fan Fave
-        .number 2
-          .name Sheldon Simeon
+        .number
+          .value 2
+          .name
+            span Sheldon Simeon
             img.avatar(loading='lazy' src='/images/sheldon-simeon-s14.png')
       .stat.person.grid-item.grid-sm-2
         h2 Chef Turned Judge
-        .number 1
-          .name Richard Blais
+        .number
+          .value 1
+          .name
+            span Richard Blais
             img.avatar(loading='lazy' src='/images/richard-blais-s8.png')
       .stat.person.grid-item.grid-sm-2
         h2 Also Competed on Masters
-        .number 1
-          .name Bryan Voltaggio
+        .number
+          .value 1
+          .name
+            span Bryan Voltaggio
             img.avatar(loading='lazy' src='/images/bryan-voltaggio.png')
 
       //- Mise en place
@@ -479,18 +507,22 @@ block content
           .number 153
         .stat.person.grid-item.grid-sm-2.grid-lg-3
           h2 Most Frequent Finale Diner
-          .number 5
-            .name Hubert Keller
+          .number
+            .value 5
+            .name
+              span Hubert Keller
               img.avatar(loading='lazy' src='/images/hubert-keller.png')
         .stat.person.grid-item.grid-sm-2
           h2 Winners Who Skipped Dessert
-          .number 2
+          .number
+            .value 2
             .roster
               img.avatar(loading='lazy' src='/images/kristen-kish.png' alt='Kristen Kish')
               img.avatar(loading='lazy' src='/images/hosea-rosenberg.png' alt='Hosea Rosenberg')
-        .stat.person.roster-lg.grid-item.grid-sm-1.grid-lg-2
+        .stat.person.grid-item.grid-sm-1.grid-lg-2
           h2 Runners-Up Who Skipped Dessert
-          .number 5
+          .number
+            .value 5
             .roster
               img.avatar(loading='lazy' src='/images/gregory-gourdet.png' alt='Gregory Gourdet')
               img.avatar(loading='lazy' src='/images/brooke-williamson.png' alt='Brooke Williamson')
@@ -502,15 +534,16 @@ block content
           .number 0
         .stat.person.grid-item.grid-sm-2
           h2 Runners-Up Who Made Risotto
-          .number 2
+          .number
+            .value 2
             .roster
               img.avatar(loading='lazy' src='/images/amar-santana.png' alt='Amar Santana')
               img.avatar(loading='lazy' src='/images/tiffani-faison-s1.png' alt='Tiffani Faison')
-        .stat.grid-item.grid-sm-2
+        .stat.question.grid-item.grid-sm-2
           h2 Is it beneficial to choose your team first?
           .number Eh
           .detail Of the #[strong 12] chefs who chose sous chefs first, #[strong 7] won the finale.
-        .stat.grid-item.grid-sm-2
+        .stat.question.grid-item.grid-sm-2
           h2 Is it beneficial to serve the judges first?
           .number Yes
           .detail Most finales are served head-to-head. But of the #[strong 4] chefs who served the judges first, #[strong 4] won the finale.
@@ -522,13 +555,17 @@ block content
 
       .stat.person.grid-item.grid-sm-1.grid-lg-2
         h2 Most Cash Won by a Top Chef
-        .number $225k
-          .name Richard Blais
+        .number
+          .value $225k
+          .name
+            span Richard Blais
             img.avatar(loading='lazy' src='/images/richard-blais-s8.png')
       .stat.person.grid-item.grid-sm-1.grid-lg-2
         h2 Most Cash Won by a Non-Winner
-        .number $45k
-          .name Kevin Gillespie
+        .number
+          .value $45k
+          .name
+            span Kevin Gillespie
             img.avatar(loading='lazy' src='/images/kevin-gillespie.png')
 
       .themed.cf
@@ -632,9 +669,10 @@ block content
           img.avatar(loading='lazy' src='/images/michelle-minori.png' alt='Michelle Minori')
 
       //- Other Eliminated
-      .stat.roster-lg.person.grid-item.grid-sm-1.grid-lg-3-1
+      .stat.person.grid-item.grid-sm-1.grid-lg-3-1
         h2 Voluntarily Left Competition
-        .number 5
+        .number
+          .value 5
           .roster
             img.avatar(loading='lazy' src='/images/lee-anne-wong.png' alt='Lee Anne Wong')
             img.avatar(loading='lazy' src='/images/howie-kleinberg.png' alt='Howie Kleinberg')
@@ -643,8 +681,10 @@ block content
             img.avatar(loading='lazy' src='/images/cynthia-sestito.png' alt='Cynthia Sestito')
       .stat.person.grid-item.grid-sm-1.grid-lg-3
         h2 Disqualified from Competition
-        .number 1
-          .name Cliff Crooks
+        .number
+          .value 1
+          .name
+            span Cliff Crooks
             img.avatar(loading='lazy' src='/images/cliff-crooks.png')
 
       //- Show Facts

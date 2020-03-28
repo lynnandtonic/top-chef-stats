@@ -16,7 +16,7 @@ block content
       p.m0 How did the chefs do in previous seasons?
       p Check out their #[a(href='/allstars-preseason') pre-season stats].
 
-    .grid.cf
+    .grid
 
       ol.ranking.current.grid-item.grid-sm-2.grid-lg-3
         li
@@ -92,7 +92,8 @@ block content
 
         .stat.person.grid-item.grid-sm-1.roster-xl
           h2 Most Quickfire Wins
-          .number 1
+          .number
+            .value 1
             .roster
               img.avatar(src='/images/kevin-gillespie-s17.png' alt='Kevin Gillespie')
               img.avatar(src='/images/jamie-lynch-s17.png' alt='Jamie Lynch')
@@ -102,7 +103,8 @@ block content
 
         .stat.person.grid-item.grid-sm-1
           h2 Most Elimination Wins
-          .number 2
+          .number
+            .value 2
             .roster
               img.avatar(src='/images/gregory-gourdet-s17.png' alt='Gregory Gourdet')
               img.avatar(src='/images/kevin-gillespie-s17.png' alt='Kevin Gillespie')
@@ -163,11 +165,13 @@ block content
         //-     .name Kelsey Barnard Clark
         //-       img.avatar(src='/images/kelsey-barnard.png')
 
-        //- .stat.person.grid-item.grid-sm-1.grid-lg-2
-        //-   h2 Best Last Chance Kitchen Streak
-        //-   .number 7
-        //-     .name Brother Luck
-        //-       img.avatar(src='/images/brother-luck.png')
+        .stat.person.grid-item.grid-sm-1
+          h2 Best Last Chance Kitchen Streak
+          .number
+            .value 1
+            .name
+              span Joe Sasto
+              img.avatar(src='/images/joe-sasto-s17.png')
 
         //- .stat.person.grid-item.grid-sm-1.grid-lg-2
         //-   h2 Last Chance Kitchen Winner
