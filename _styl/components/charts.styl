@@ -6,7 +6,7 @@
   h2
     border-bottom: $ui-border
 
-$line-width = (100/6)%
+$line-width = (100/7)%
 $chart-border = 1px dotted white(.2)
 
 bar-background(percentage)
@@ -40,6 +40,8 @@ bar-background(percentage)
       left: $line-width*5
     &:nth-of-type(7)
       left: $line-width*6
+    &:nth-of-type(8)
+      left: $line-width*7
     &:last-of-type
       border-right: $chart-border
 
@@ -69,3 +71,5 @@ bar-background(percentage)
       background-image: bar-background($line-width*5)
     &.bar-6
       background-image: bar-background($line-width*6)
+    &.bar-7
+      background-image: bar-background($line-width*7)
