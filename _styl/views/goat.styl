@@ -1,0 +1,53 @@
+.goat-list
+  max-width: 1120px
+  margin: 0 auto 50px
+
+  @media screen and (min-width: 800px)
+    display: grid
+    gap: 30px
+    grid-template-columns: 1fr 1fr
+
+.goat-contender
+  padding: 30px
+  background-color: black(.1)
+
+  .goat-chef
+    text-align: center
+
+  h2
+    font-size: 140%
+    font-weight: bold
+
+.goat-wins
+  .win
+    padding: 15px 0
+    display: flex
+    justify-content: space-between
+    align-items: center
+    
+    &:not(:last-child)
+      border-bottom: 1px solid white(.3)
+
+    &.total
+      font-size: 120%
+    &.breakdown
+      padding: 5px 0
+      font-size: 90%
+
+    .episode
+      font-size: 70%
+      opacity: .7
+    .type
+      display: block
+    .description
+      display: block
+
+    .pill
+      margin-top: 5px
+      display: inline-block
+      padding: 6px
+      background-color: black(.2)
+      border-radius: 3px
+      font-size: 60%
+      font-weight: bold
+      text-transform: uppercase
