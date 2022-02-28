@@ -11,8 +11,10 @@ $nav-border = 1px solid white(.3)
 
   li
     border-right: $nav-border
+    display: flex
 
     a
+      width:100%
       padding: 10px
       display: block
       color: white
@@ -59,21 +61,21 @@ $nav-border = 1px solid white(.3)
 @media screen and (min-width: 651px) and (max-width: 1200px)
 
   .nav-seasons li
-    width: 16.66%
+    width: 14.28%
 
-    &:nth-child(-n+12)
+    &:nth-child(-n+14)
       border-bottom: $nav-border
 
-    &:nth-child(6n)
+    &:nth-child(7n)
       border-right: none
 
 @media screen and (min-width: 1201px)
 
   .nav-seasons li
-    width: 11.111%
+    width: 10%
 
-    &:nth-child(-n+9)
+    &:nth-child(-n+10)
       border-bottom: $nav-border
 
-    &:nth-child(9)
+    &:nth-child(10)
       border-right: none
