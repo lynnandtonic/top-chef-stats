@@ -21,9 +21,14 @@ html
 
     meta(property='og:description', content=pageDescription)
     meta(name='twitter:description', content=pageDescription)
-    meta(property='og:locale', content='en_US')
-    meta(property='og:type', content='website')
-    meta(property='og:site_name', content='Top Chef Stats')
+    meta(content='en_US', property='og:locale')
+    meta(content='website', property='og:type')
+    meta(content='Top Chef Stats', property='og:site_name')
+    meta(content='@lynnandtonic', name='twitter:site')
+    meta(content='@lynnandtonic', name='twitter:creator')
+    meta(name='twitter:card', content='summary_large_image')
+    meta(property='og:image:width', content='1200')
+    meta(property='og:image:height', content='630')
     if bodyClass == 'home'
       meta(property='og:title', content='Top Chef Stats')
       meta(property='twitter:title', content='Top Chef Stats')
@@ -32,14 +37,12 @@ html
       meta(property='og:title', content=title + ' - Top Chef Stats')
       meta(property='twitter:title', content=title + ' - Top Chef Stats')
       meta(property='og:url', content='https://topchefstats.com/' + bodyClass)
-    meta(property='og:image', content='https://topchefstats.com/images/facebook-top-chef-stats.png')
-    meta(property='og:image:secure_url', content='https://topchefstats.com/images/facebook-top-chef-stats.png')
-    meta(property='twitter:image', content='https://topchefstats.com/images/facebook-top-chef-stats.png')
-    meta(property='og:image:width', content='1200')
-    meta(property='og:image:height', content='630')
-    meta(name='twitter:card', content='summary_large_image')
-    meta(name='twitter:site', content='@lynnandtonic')
-    meta(name='twitter:creator', content='@lynnandtonic')
+    if ogImage == 'season'
+      meta(content='https://topchefstats.com/images/OG/' + bodyClass + '.jpg', property='og:image')
+      meta(content='https://topchefstats.com/images/OG/' + bodyClass + '.jpg', property='twitter:image')
+    else
+      meta(content='https://topchefstats.com/images/facebook-top-chef-stats.png', property='og:image')
+      meta(content='https://topchefstats.com/images/facebook-top-chef-stats.png', property='twitter:image')
 
   body(class=bodyClass)
 
