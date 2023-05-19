@@ -146,7 +146,7 @@
 
   &.current
 
-    li:nth-child(-n+6)
+    li:nth-child(-n+4)
       display: none
 
 // two contestants tie for 3rd
@@ -160,6 +160,11 @@
 .season-19 .ranking li
   &:nth-child(3) span:after
     content: '2nd'
+
+// two contestants tie for 6th
+.season-20 .ranking li
+  &:nth-child(5) span:after
+    content: '6th'
 
 
 @media screen and (max-width: $bp-small)
