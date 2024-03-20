@@ -37,13 +37,10 @@ $nav-border = 1px solid white(.3)
   .nav-seasons li
     width: 25%
 
-    &:nth-child(-n+16)
+    &:nth-child(-n+20)
       border-bottom: $nav-border
 
-    &:nth-child(4),
-    &:nth-child(8),
-    &:nth-child(12),
-    &:nth-child(16)
+    &:nth-child(4n)
       border-right: none
 
 @media screen and (min-width: 401px) and (max-width: 650px)
@@ -51,14 +48,24 @@ $nav-border = 1px solid white(.3)
   .nav-seasons li
     width: 20%
 
-    &:nth-child(-n+15)
+    &:nth-child(-n+20)
       border-bottom: $nav-border
 
-    &:nth-child(5),
-    &:nth-child(10)
+    &:nth-child(5n)
       border-right: none
 
-@media screen and (min-width: 651px) and (max-width: 1200px)
+@media screen and (min-width: 651px) and (max-width: 950px)
+
+  .nav-seasons li
+    width: 16.66%
+
+    &:nth-child(-n+18)
+      border-bottom: $nav-border
+
+    &:nth-child(6n)
+      border-right: none
+
+@media screen and (min-width: 951px)
 
   .nav-seasons li
     width: 14.28%
@@ -67,15 +74,4 @@ $nav-border = 1px solid white(.3)
       border-bottom: $nav-border
 
     &:nth-child(7n)
-      border-right: none
-
-@media screen and (min-width: 1201px)
-
-  .nav-seasons li
-    width: 10%
-
-    &:nth-child(-n+10)
-      border-bottom: $nav-border
-
-    &:nth-child(10)
       border-right: none

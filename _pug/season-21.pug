@@ -1,0 +1,234 @@
+extends _layout
+
+block vars
+  - var pageDescription = 'Compiled stats and facts from Top Chef Season 21: Wisconsin'
+  - var ogImage = 'season'
+  - var bodyClass = 'season-21'
+  - var title = 'Season 21'
+
+block content
+
+  .season.season-21
+
+    .intro
+      h1
+        span Season 21
+        span Wisconsin
+
+    .grid
+
+      ol.ranking.grid-item.grid-sm-2.grid-lg-3.current
+        li
+          div.chef
+          span
+        li
+          div.chef
+          span
+        li
+          div.chef
+          span
+        li
+          div.chef
+          span
+        li
+          div.chef
+          span
+        li
+          div.chef
+          span
+        li
+          div.chef
+          span
+        li
+          div.chef
+          span
+        li
+          div.chef
+          span
+        li
+          div.chef
+          span
+        li
+          div.chef
+          span
+        li
+          div.chef
+          span
+        li
+          div.chef
+          span
+        li
+          div.chef
+          span
+        li
+          div.chef
+          span TBD
+
+      .grid-item.grid-sm-2.grid-lg-3-1.p0
+
+        .stat.person.grid-item.grid-sm-1.grid-lg-2
+          h2 Host &amp; Judges
+          .roster
+            img.avatar(src='/images/kristen-kish-host.png' alt='Kristen Kish')
+            img.avatar(src='/images/tom-colicchio.png' alt='Tom Colicchio')
+            img.avatar(src='/images/gail-simmons.png' alt='Gail Simmons')
+
+        //- .stat.grid-item.grid-sm-1.grid-lg-2
+        //-   h2 Total Shows Represented
+        //-   .number 11
+
+        .stat.grid-item.grid-sm-1.grid-lg-2
+          h2 Total Guest Judges
+          .number 0
+
+        .stat.grid-item.grid-sm-1.grid-lg-2
+          h2 Total Challenges
+          .number 0
+
+        .stat.grid-item.grid-sm-1.grid-lg-2
+          h2 Total Team Challenges
+          .number 0
+
+        .stat.grid-item.grid-sm-1.grid-lg-2
+          h2 Total Sudden Death Cookoffs
+          .number 0
+
+        .stat.person.grid-item.grid-sm-1.grid-lg-2
+          h2 Most Quickfire Wins
+          .number
+            .value 0
+            //- .name
+            //-   span Buddha Lo
+            //-   img.avatar(src='/images/buddha-lo-s20.png' alt='Buddha Lo')
+
+        .stat.person.grid-item.grid-sm-1.grid-lg-2
+          h2 Most Elimination Wins
+          .number
+            .value 0
+            //- .name
+            //-   span Buddha Lo
+            //-   img.avatar(src='/images/buddha-lo-s20.png' alt='Buddha Lo')
+
+        .stat.person.grid-item.grid-sm-1
+          h2 Most Overall Wins
+          .number
+            .value 0
+            //- .name
+            //-   span Buddha Lo
+            //-   img.avatar(src='/images/buddha-lo-s20.png' alt='Buddha Lo')
+
+        .stat.person.grid-item.grid-sm-1.grid-lg-2
+          h2 Total Wins With Immunity
+          .number
+            .value 0
+            //- .name
+            //-   span Damarr Brown
+            //-   img.avatar(src='/images/damarr-brown.png' alt='Damarr Brown')
+
+        //- .stat.person.grid-item.grid-sm-1.grid-lg-2
+        //-   h2 Most Full Episode Wins
+        //-   .number
+        //-     .value 2
+        //-     .name
+        //-       span Buddha Lo
+        //-       img.avatar(src='/images/buddha-lo-s20.png' alt='Buddha Lo')
+
+        //- .featured.relay-race
+        //-   h2 Tag-Team Cook-Off Winner
+        //-   .phrase Yellow Team
+        //-   .roster.center
+        //-     img.avatar(src='/images/jo-chan.png' alt='Jo Chan')
+        //-     img.avatar(src='/images/monique-feybesse.png' alt='Monique Feybesse')
+        //-     img.avatar(src='/images/buddha-lo.png' alt='Buddha Lo')
+
+        //- .featured.relay-race
+        //-   h2 Mise en place Race Winner
+        //-   .phrase Red &amp; Green Teams
+        //-   .roster.center
+        //-       img.avatar(src='/images/buddha-lo-s20.png' alt='Buddha Lo')
+        //-       img.avatar(src='/images/nicole-gomes.png' alt='Nicole Gomes')
+        //-       img.avatar(src='/images/victoire-gouloubi.png' alt='Victoire Gouloubi')
+        //-       img.avatar(src='/images/amar-santana-s20.png' alt='Amar Santana')
+        //-       img.avatar(src='/images/charbel-hayek.png' alt='Charbel Hayek')
+        //-       img.avatar(src='/images/sara-bradley-s20.png' alt='Sara Bradley')
+
+        //- .featured.restaurant-wars
+        //-   h2 Restaurant Wars Winner
+        //-   .phrase United Kitchen
+        //-   .roster.center
+        //-     .winner
+        //-       img.avatar(src='/images/buddha-lo-s20.png' alt='Buddha Lo')
+        //-     img.avatar(src='/images/ali-ghzawi.png' alt='Ali Ghzawi')
+        //-     img.avatar(src='/images/amar-santana-s20.png' alt='Amar Santana')
+        //-     img.avatar(src='/images/sara-bradley-s20.png' alt='Sara Bradley')
+
+        //- .stat.person.grid-item.grid-sm-1
+        //-   h2 Eliminated in Restaurant Wars
+        //-   .number
+        //-     .value 1
+        //-     .name
+        //-       span Nicole Gomes
+        //-       img.avatar(src='/images/nicole-gomes.png' alt='Nicole Gomes')
+
+        //- .stat.person.grid-item.grid-sm-1.grid-lg-2
+        //-   h2 Eliminated for Dessert
+        //-   .number
+        //-     .value 1
+        //-     .name
+        //-       span Jackson Kalb
+        //-       img.avatar(src='/images/jackson-kalb.png' alt='Jackson Kalb')
+
+        //- .stat.person.grid-item.grid-sm-1.grid-lg-2
+        //-   h2 Black Box Challenge Winner
+        //-   .number
+        //-     .value 1
+        //-     .name
+        //-       span Dawn Burrell
+        //-       img.avatar(src='/images/dawn-burrell.png')
+
+        //- .stat.person.grid-item.grid-sm-1.grid-lg-2
+        //-   h2 Fan Favorite
+        //-   .number 1
+        //-     .name
+        //-       span Shota Nakajima
+        //-       img.avatar(src='/images/shota-nakajima.png' alt='Shota Nakajima')
+
+        //- .stat.person.grid-item.grid-sm-1.grid-lg-2
+        //-   h2 Best Last Chance Kitchen Streak
+        //-   .number
+        //-     .value 4
+        //-     .roster
+        //-       //- span Dale MacKay
+        //-       img.avatar(src='/images/dale-mackay.png' alt='Dale MacKay')
+        //-       img.avatar(src='/images/charbel-hayek.png' alt='Charbel Hayek')
+
+        //- .stat.person.grid-item.grid-sm-1.grid-lg-2
+        //-   h2 Last Chance Kitchen Front Runner
+        //-   .number 
+        //-     .value 2
+        //-     .roster
+        //-       //- span Charbel Hayek
+        //-       img.avatar(src='/images/charbel-hayek.png' alt='Charbel Hayek')
+        //-       img.avatar(src='/images/sara-bradley-s20.png' alt='Sara Bradley')
+
+        //- .stat.person.grid-item.grid-sm-1.grid-lg-2
+        //-   h2 Last Chance Kitchen Winner
+        //-   .number 
+        //-     .value 2
+        //-     .roster
+        //-       //- span Dale MacKay
+        //-       img.avatar(src='/images/dale-mackay.png' alt='Dale MacKay')
+        //-       img.avatar(src='/images/sara-bradley-s20.png' alt='Sara Bradley')
+
+        //- .stat.person.grid-item.grid-sm-1
+        //-   h2 Most Cash Won by a Non-Winner
+        //-   //- h2 Most Cash Won
+        //-   .number
+        //-     .value $20k
+        //-     .name
+        //-       span Ali Ghzawi
+        //-       img.avatar(src='/images/ali-ghzawi.png' alt='Ali Ghzawi')
+
+        .featured.finale
+          h2 Finale Location
+          .phrase TBD
