@@ -146,13 +146,8 @@
 
   &.current
 
-    li:nth-child(-n+8)
+    li:nth-child(-n+6)
       display: none
-
-// two contestants tie for 3rd
-.season-13 .ranking li
-  &:nth-child(4) span:after
-    content: '3rd'
 
 // two contestants tie for 2nd
 .season-17 .ranking li,
@@ -162,6 +157,15 @@
   &:nth-child(3) span:after
     content: '2nd'
 
+// two contestants tie for 3rd
+.season-13 .ranking li
+  &:nth-child(4) span:after
+    content: '3rd'
+
+// two contestants tie for 7th
+.season-21 .ranking li
+  &:nth-child(8) span:after
+    content: '7th'
 
 @media screen and (max-width: $bp-small)
 
