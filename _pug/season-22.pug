@@ -62,13 +62,7 @@ block content
           span
         li
           div.chef
-          span
-        li
-          div.chef
-          span
-        li
-          div.chef
-          span TBD
+          span Mimi Weissenborn
 
       .grid-item.grid-sm-2.grid-lg-3-1.p0
 
@@ -81,43 +75,48 @@ block content
 
         .stat.grid-item.grid-sm-1.grid-lg-2
           h2 Total Guest Judges
-          .number 0
+          .number 1
 
         .stat.grid-item.grid-sm-1.grid-lg-2
           h2 Total Challenges
-          .number 0
+          .number 2
 
         .stat.grid-item.grid-sm-1.grid-lg-2
           h2 Total Team Challenges
-          .number 0
+          .number 1
 
-        .stat.grid-item.grid-sm-1.grid-lg-2
-          h2 Total Sudden Death Cookoffs
-          .number 0
+        //- .stat.grid-item.grid-sm-1.grid-lg-2
+        //-   h2 Total Sudden Death Cookoffs
+        //-   .number 0
 
         .stat.person.grid-item.grid-sm-1.grid-lg-2
           h2 Most Quickfire Wins
           .number
-            .value 0
-            //- .name
-            //-   span Savannah Miller
-            //-   img.avatar(src='/images/savannah-miller.png' alt='Savannah Miller')
+            .value 1
+            .roster
+              //- span Savannah Miller
+              img.avatar(src='/images/cesar-murillo.png' alt='César Murillo')
+              img.avatar(src='/images/mimi-weissenborn.png' alt='Mimi Weissenborn')
+              img.avatar(src='/images/katianna-hong.png' alt='Katianna Hong')
 
         .stat.person.grid-item.grid-sm-1.grid-lg-2
           h2 Most Elimination Wins
           .number
-            .value 0
-            //- .name
-            //-   span Danny Garcia
-            //-   img.avatar(src='/images/danny-garcia.png' alt='Danny Garcia')
+            .value 1
+            .name
+              span Vinny Loseto
+              img.avatar(src='/images/vincenzo-loseto.png' alt='Vinny Loseto')
 
-        .stat.person.grid-item.grid-sm-1.grid-lg-2
+        .stat.person.grid-item.grid-sm-1
           h2 Most Overall Wins
           .number
-            .value 0
-            //- .name
-            //-   span Danny Garcia
-            //-   img.avatar(src='/images/danny-garcia.png' alt='Danny Garcia')
+            .value 1
+            .roster
+              //- span Danny Garcia
+              img.avatar(src='/images/cesar-murillo.png' alt='Ceésar Murillo')
+              img.avatar(src='/images/katianna-hong.png' alt='Katianna Hong')
+              img.avatar(src='/images/mimi-weissenborn.png' alt='Mimi Weissenborn')
+              img.avatar(src='/images/vincenzo-loseto.png' alt='Vinny Loseto')
 
         .stat.person.grid-item.grid-sm-1.grid-lg-2
           h2 Total Wins With Immunity
@@ -212,14 +211,14 @@ block content
         //-       span Soo Ahn
         //-       img.avatar(src='/images/soo-ahn.png' alt='Soo Ahn')
 
-        //- .stat.person.grid-item.grid-sm-1.grid-lg-2
-        //-   h2 Last Chance Kitchen Front Runner
-        //-   .number 
-        //-     .value 2
-        //-     .roster
-        //-       //- span Kévin D'Andrea
-        //-       img.avatar(src='/images/laura-ozyilmaz.png' alt="Laura Ozyilmaz")
-        //-       img.avatar(src='/images/amanda-turner.png' alt="Amanda Turner")
+        .stat.person.grid-item.grid-sm-1.grid-lg-2
+          h2 Last Chance Kitchen Front Runner
+          .number 
+            .value 2
+            .roster
+              //- span Kévin D'Andrea
+              img.avatar(src='/images/samuel-olayinka.png' alt="Samuel Olayinka")
+              img.avatar(src='/images/mimi-weissenborn.png' alt='Mimi Weissenborn')
 
         //- .stat.person.grid-item.grid-sm-1.grid-lg-2
         //-   h2 Last Chance Kitchen Winner
@@ -230,13 +229,15 @@ block content
         //-       img.avatar(src='/images/ying-gao.png' alt='Ying Gao')
         //-       img.avatar(src='/images/samuel-olayinka.png' alt='Samuel Olayinka')
 
-        //- .stat.person.grid-item.grid-sm-1
-        //-   h2 Most Cash Won by a Non-Winner
-        //-   .number
-        //-     .value $38k
-        //-     .name
-        //-       span Savannah Miller
-        //-       img.avatar(src='/images/savannah-miller.png' alt='Savannah Miller')
+        .stat.person.grid-item.grid-sm-1
+          h2 Most Cash Won
+          .number
+            .value $5k
+            .roster
+              //- span Savannah Miller
+              img.avatar(src='/images/cesar-murillo.png' alt='Ceésar Murillo')
+              img.avatar(src='/images/mimi-weissenborn.png' alt='Mimi Weissenborn')
+              img.avatar(src='/images/katianna-hong.png' alt='Katianna Hong')
 
         //- .featured.finale
         //-   h2 Finale Location
