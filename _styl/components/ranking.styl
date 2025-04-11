@@ -146,7 +146,7 @@
 
   &.current
 
-    li:nth-child(-n+11)
+    li:nth-child(-n+9)
       display: none
 
 // two contestants tie for 2nd
@@ -162,6 +162,11 @@
 .season-13 .ranking li
   &:nth-child(4) span:after
     content: '3rd'
+
+// two contestants tie for 10th
+.season-22 .ranking li
+  &:nth-child(11) span:after
+    content: '10th'
 
 @media screen and (max-width: $bp-small)
 
