@@ -38,6 +38,9 @@ block content
           span
         li
           div.chef
+          span Vinny Loseto
+        li
+          div.chef
           span Paula Endara
         li
           div.chef
@@ -59,9 +62,6 @@ block content
           span Anya El-Wattar
         li
           div.chef
-          span Bailey Sullivan
-        li
-          div.chef
           span Mimi Weissenborn
 
       .grid-item.grid-sm-2.grid-lg-3-1.p0
@@ -75,11 +75,11 @@ block content
 
         .stat.grid-item.grid-sm-1.grid-lg-2
           h2 Total Guest Judges
-          .number 18
+          .number 23
 
         .stat.grid-item.grid-sm-1.grid-lg-2
           h2 Total Challenges
-          .number 14
+          .number 18
 
         .stat.grid-item.grid-sm-1.grid-lg-2
           h2 Total Team Challenges
@@ -93,9 +93,10 @@ block content
           h2 Most Quickfire Wins
           .number
             .value 2
-            .name
-              span Katianna Hong
+            .roster
+              //- span Katianna Hong
               img.avatar(src='/images/katianna-hong.png' alt='Katianna Hong')
+              img.avatar(src='/images/cesar-murillo.png' alt='César Murillo')
 
         .stat.person.grid-item.grid-sm-1.grid-lg-2
           h2 Most Elimination Wins
@@ -217,30 +218,32 @@ block content
               img.avatar(src='/images/bailey-sullivan.png' alt='Bailey Sullivan')
               img.avatar(src='/images/katianna-hong.png' alt='Katianna Hong')
 
-        .stat.person.grid-item.grid-sm-1.grid-lg-2
-          h2 Last Chance Kitchen Front Runner
-          .number 
-            .value 1
-            .name
-              span Katianna Hong
-              img.avatar(src='/images/katianna-hong.png' alt='Katianna Hong')
+        //- .stat.person.grid-item.grid-sm-1.grid-lg-2
+        //-   h2 Last Chance Kitchen Front Runner
+        //-   .number 
+        //-     .value 1
+        //-     .name
+        //-       span Katianna Hong
+        //-       img.avatar(src='/images/katianna-hong.png' alt='Katianna Hong')
 
         .stat.person.grid-item.grid-sm-1.grid-lg-2
           h2 Last Chance Kitchen Winner
           .number 
-            .value 1
-            .name
-              span Bailey Sullivan
+            .value 2
+            .roster
+              //- span Bailey Sullivan
               img.avatar(src='/images/bailey-sullivan.png' alt='Bailey Sullivan')
+              img.avatar(src='/images/cesar-murillo.png' alt='César Murillo')
 
         .stat.person.grid-item.grid-sm-1
           h2 Most Cash Won
           .number
             .value $25k
-            .name
-              span Tristen Epps
+            .roster
+              //- span Tristen Epps
               img.avatar(src='/images/tristen-epps.png' alt='Tristen Epps')
+              img.avatar(src='/images/lana-lagomarsini.png' alt='Lana Lagomarsini')
 
-        //- .featured.finale
-        //-   h2 Finale Location
-        //-   .phrase MS Eurodam &amp; Curaçao
+        .featured.finale
+          h2 Finale Location
+          .phrase Calgary
